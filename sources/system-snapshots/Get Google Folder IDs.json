@@ -1,0 +1,491 @@
+{
+  "name": "Get Google Folder IDs",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -496,
+        -288
+      ],
+      "id": "b4feb8a9-71e2-46bb-a860-45de9fc9f0be",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "mimeType = 'application/vnd.google-apps.folder' and '18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_' in parents and trashed = false",
+        "returnAll": true,
+        "filter": {},
+        "options": {
+          "fields": [
+            "*"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -304,
+        -192
+      ],
+      "id": "733993d8-77ad-48c8-bb38-b35d96802f1a",
+      "name": "Search files and folders",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 50,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -176,
+        -48
+      ],
+      "id": "183032b5-ce64-48dc-988a-e5a1a152c729",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "=mimeType = 'application/vnd.google-apps.folder'\nand '{{$json[\"id\"]}}' in parents\nand trashed = false",
+        "returnAll": true,
+        "filter": {},
+        "options": {
+          "fields": [
+            "*"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        16,
+        48
+      ],
+      "id": "73661b03-faa1-409f-93c7-14c95f04183b",
+      "name": "Search files and folders1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        528,
+        -256
+      ],
+      "id": "b2fd90fc-6251-41fa-9afd-d15e505225d8",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "batchSize": 50,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        224,
+        80
+      ],
+      "id": "885d17ce-784d-401a-acfa-28a4dc314b0f",
+      "name": "Loop Over Items1"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "=mimeType = 'application/vnd.google-apps.folder' and '{{$json[\"id\"]}}' in parents and trashed = false",
+        "returnAll": true,
+        "filter": {},
+        "options": {
+          "fields": [
+            "*"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        416,
+        128
+      ],
+      "id": "17044040-824e-4d88-8936-fb2c6377531a",
+      "name": "Search files and folders2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8160745c-7ab4-4954-b63e-784c7ccc2858",
+              "name": "name",
+              "value": "={{ $json.name }}",
+              "type": "string"
+            },
+            {
+              "id": "9c21b5cc-d28d-41fd-8d7f-dc87d1cfa15c",
+              "name": "id",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "c29ff8b0-a18d-4ccd-b669-20892b7bb6d3",
+              "name": "parents[0]",
+              "value": "={{ $json.parents[0] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        656,
+        0
+      ],
+      "id": "ccc35da9-0318-4865-8bea-b2bcb81d8dc6",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {
+    "Edit Fields": [
+      {
+        "json": {
+          "name": "BOOK - All in the Soup Together",
+          "id": "1wXYsN253TZTVcBPueU0Ayy595L3WR3SH",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "BOOK - Tributaries",
+          "id": "1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "BOOK - Words That Dance",
+          "id": "1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "BOOK - Arms Filled with Bittersweet",
+          "id": "1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Source files",
+          "id": "1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "PSDs",
+          "id": "1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Admin",
+          "id": "1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "SHARED",
+          "id": "1nNs4IL7Vrx_xuRxmKE-kCqmBizvBMgcV",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "~old",
+          "id": "1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Unsorted",
+          "id": "1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Website",
+          "id": "1kaBTXf2AfKiaRQFJ4NWqKNYwltwwp0M_",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Marketing",
+          "id": "1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7",
+          "parents": [
+            "18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Master",
+          "id": "1K9TPBa4lpwe68-HcLdtSPkCvSAq1NpiD",
+          "parents": [
+            "1wXYsN253TZTVcBPueU0Ayy595L3WR3SH"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Master",
+          "id": "1gsjBBx9eGQhjyLE8wL2lONLQNUy5reeX",
+          "parents": [
+            "1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Master",
+          "id": "1IMsYiNNUoUZFAp_H6uP80d_Az1XCjckc",
+          "parents": [
+            "1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Master",
+          "id": "1PL6nLdN9Jc7QmcXAjkMqnieR9R_tY8l3",
+          "parents": [
+            "1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Copy",
+          "id": "1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA",
+          "parents": [
+            "1kaBTXf2AfKiaRQFJ4NWqKNYwltwwp0M_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Design",
+          "id": "1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh",
+          "parents": [
+            "1kaBTXf2AfKiaRQFJ4NWqKNYwltwwp0M_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Assets",
+          "id": "17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi",
+          "parents": [
+            "1kaBTXf2AfKiaRQFJ4NWqKNYwltwwp0M_"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Social images",
+          "id": "1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh",
+          "parents": [
+            "1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Video",
+          "id": "1UfyROSb-qREBTQ_q5guiyyroA3ikYYbB",
+          "parents": [
+            "1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7"
+          ]
+        }
+      },
+      {
+        "json": {
+          "name": "Featured images",
+          "id": "1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5",
+          "parents": [
+            "17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi"
+          ]
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Search files and folders1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Search files and folders2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7a8336e0-a7c5-4936-aab7-a809c5017cc0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "0ncFxpPpLWYisZ7D",
+  "tags": []
+}

@@ -1,0 +1,414 @@
+{
+  "name": "Amazon Deliveries - Workflow 1 Shipped",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyHour",
+              "minute": 1
+            }
+          ]
+        },
+        "filters": {
+          "q": "label:Amazon newer_than:1d"
+        }
+      },
+      "id": "3d57739e-2153-49a6-987a-917489c6cea1",
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "lBw1pGp8GyPaziPM",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "standard-shipped",
+              "leftValue": "={{ $json.From }}",
+              "rightValue": "shipment-tracking@amazon.com",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "d3476ca8-e69b-4143-a563-9afc6c4352da",
+      "name": "Filter: Amazon Shipped Senders",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        176,
+        -48
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "subject-shipped-standard",
+              "leftValue": "={{ $json.Subject }}",
+              "rightValue": "^Shipped:",
+              "operator": {
+                "type": "string",
+                "operation": "regex"
+              }
+            },
+            {
+              "id": "subject-shipped-pharmacy",
+              "leftValue": "={{ $json.Subject }}",
+              "rightValue": "Your order has shipped",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "eaa799cc-99a5-4bd8-9c6a-8e1aa06f1cc0",
+      "name": "Filter: Shipped Subjects Only",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        368,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// —— Parse Amazon Shipped Email ——————————————————————————\n// Handles two formats:\n//   1. Standard: from shipment-tracking@amazon.com\n//   2. Pharmacy: from no-reply@pharmacy.amazon.com\n//\n// Input: Run Once for All Items\n// The \"from\" field is now an object: { value: [{address, name}], text, html }\n\nconst items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  const json = item.json;\n\n  // Extract body text\n  const body = json.text || json.body || '';\n\n  // Extract \"from\" address — handles both string and object formats\n  let fromAddress = '';\n  if (typeof json.from === 'string') {\n    fromAddress = json.from;\n  } else if (json.from && json.from.value && json.from.value.length > 0) {\n    fromAddress = json.from.value[0].address || '';\n  } else if (json.from && json.from.text) {\n    fromAddress = json.from.text;\n  } else if (json.From) {\n    // Fallback: uppercase From from Gmail trigger metadata\n    fromAddress = typeof json.From === 'string' ? json.From : '';\n  }\n\n  // Extract subject\n  const subject = json.subject || json.Subject || '';\n\n  // Extract email timestamp\n  const emailDateMs = json.internalDate\n    ? parseInt(json.internalDate)\n    : json.date\n      ? new Date(json.date).getTime()\n      : Date.now();\n  const emailDate = new Date(emailDateMs);\n\n  // —— Helper: format date as YYYY-MM-DD ————————————————\n  function formatDate(d) {\n    return d.toISOString().split('T')[0];\n  }\n\n  // —— Helper: parse natural language delivery date ———————\n  function parseDeliveryDate(phrase, baseDate) {\n    const p = phrase.trim().toLowerCase();\n\n    if (p.includes('today')) {\n      return formatDate(baseDate);\n    }\n    if (p.includes('tomorrow')) {\n      const d = new Date(baseDate);\n      d.setDate(d.getDate() + 1);\n      return formatDate(d);\n    }\n\n    // Try to parse a date like \"Wednesday, February 26\" or \"Feb 26\"\n    const monthNames = ['january','february','march','april','may','june',\n                        'july','august','september','october','november','december'];\n    for (let i = 0; i < monthNames.length; i++) {\n      if (p.includes(monthNames[i])) {\n        const dayMatch = p.match(/(\\d{1,2})/);\n        if (dayMatch) {\n          const year = baseDate.getFullYear();\n          const month = i;\n          const day = parseInt(dayMatch[1]);\n          return formatDate(new Date(year, month, day));\n        }\n      }\n    }\n\n    // Fallback: 3-letter month abbreviations\n    const shortMonths = ['jan','feb','mar','apr','may','jun',\n                         'jul','aug','sep','oct','nov','dec'];\n    for (let i = 0; i < shortMonths.length; i++) {\n      if (p.includes(shortMonths[i])) {\n        const dayMatch = p.match(/(\\d{1,2})/);\n        if (dayMatch) {\n          const year = baseDate.getFullYear();\n          return formatDate(new Date(year, i, parseInt(dayMatch[1])));\n        }\n      }\n    }\n\n    // Can't parse — return empty string\n    return '';\n  }\n\n  // —— Determine email type ——————————————————————————————\n  const isPharmacy = fromAddress.toLowerCase().includes('pharmacy.amazon');\n\n  let source = 'standard';\n  let order_number = '';\n  let items_list = [];\n  let expected_date = '';\n\n  if (isPharmacy) {\n    // ——— Pharmacy format ————————————————————————————————\n    source = 'pharmacy';\n\n    // Pharmacy emails don't have order numbers — generate synthetic one\n    order_number = 'PHARM-' + emailDateMs;\n\n    // Extract item name: \"Your order for X has shipped\"\n    const pharmItemMatch = body.match(/Your order for (.+?) has shipped/i);\n    const itemName = pharmItemMatch ? pharmItemMatch[1].trim() : 'Pharmacy Item';\n    items_list.push({ raw_name: itemName, quantity: 1 });\n\n    // Extract delivery date: \"will arrive by [date]\"\n    const pharmDateMatch = body.match(/will arrive by (.+?)(?:\\.|$)/im);\n    if (pharmDateMatch) {\n      expected_date = parseDeliveryDate(pharmDateMatch[1], emailDate);\n    }\n\n  } else {\n    // ——— Standard Amazon format ——————————————————————————\n    source = 'standard';\n\n    // Extract order number\n    // The text body has: \"Order #\\n112-8377634-3479412\"\n    const orderMatch = body.match(/Order\\s*#\\s*\\n?\\s*([\\d-]+)/i);\n    order_number = orderMatch ? orderMatch[1].trim() : '';\n\n    // Extract delivery date from \"Arriving tomorrow\" / \"Arriving today\" / \"Arriving [date]\"\n    const arrivingMatch = body.match(/Arriving\\s+(.+?)(?:\\n|$)/i);\n    if (arrivingMatch) {\n      expected_date = parseDeliveryDate(arrivingMatch[1], emailDate);\n    }\n\n    // Extract items — text format is:\n    // * Product Name\n    //   Quantity: 1\n    //   4.49 USD\n    const itemRegex = /^\\* (.+?)\\n\\s*Quantity:\\s*(\\d+)/gm;\n    let match;\n    while ((match = itemRegex.exec(body)) !== null) {\n      items_list.push({\n        raw_name: match[1].trim(),\n        quantity: parseInt(match[2])\n      });\n    }\n  }\n\n  results.push({\n    json: {\n      source,\n      order_number,\n      items: items_list,\n      expected_date\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "ebc761cd-5920-439f-a8ef-13dd0ead35a2",
+      "name": "Parse Email Body",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        672,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// —— Build OpenAI Prompt ————————————————————————————————\n// Input: one item from Parse Email Body with structure:\n//   { source, order_number, items: [{raw_name, quantity}], expected_date }\n//\n// Mode: Run Once for All Items\n// Output: one item with openai_request_body (pre-serialized JSON string)\n//         plus passthrough of parse data for the next node\n\nconst allItems = $input.all();\nconst results = [];\n\nfor (const item of allItems) {\n  const { source, order_number, items, expected_date } = item.json;\n\n  if (!items || items.length === 0) {\n    results.push({ json: { source, order_number, items, expected_date, openai_request_body: '' } });\n    continue;\n  }\n\n  // Build numbered list of product names for the prompt\n  const numberedList = items\n    .map((it, i) => `${i + 1}. ${it.raw_name}`)\n    .join('\\n');\n\n  const prompt = `You are a product name shortener. Given a list of Amazon product names, return a JSON array of short, human-friendly labels (2-4 words, no brand names, no dimensions, no model numbers).\n\nReturn ONLY a JSON array of strings, one per product, in the same order. No explanation, no markdown, no code fences.\n\nProducts:\n${numberedList}`;\n\n  const requestBody = {\n    model: 'gpt-4o-mini',\n    max_tokens: 1000,\n    messages: [\n      { role: 'user', content: prompt }\n    ]\n  };\n\n  results.push({\n    json: {\n      source,\n      order_number,\n      items,\n      expected_date,\n      openai_request_body: JSON.stringify(requestBody)\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "a37594e5-e11c-4a2e-be1a-5656fcb177c8",
+      "name": "Build OpenAI Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        864,
+        -48
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ $json.openai_request_body }}",
+        "options": {}
+      },
+      "id": "8c00e57d-00d4-4095-b65d-46358cf26ec5",
+      "name": "OpenAI: Clean Item Names",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1088,
+        48
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "GgiQA0uPLDlBVqmp",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge Pretty Names & Explode Rows\n// Input 1 (this node's direct input): OpenAI response\n// Input 2: original parse data from Build OpenAI Prompt node\n\nconst openaiItem = $input.first().json;\nconst parseData = $('Build OpenAI Prompt').first().json;\n\nconst items = parseData.items || [];\nconst content = openaiItem.choices?.[0]?.message?.content || '';\n\nlet prettyNames = [];\ntry {\n  const cleaned = content.replace(/```json|```/g, '').trim();\n  prettyNames = JSON.parse(cleaned);\n} catch (e) {\n  prettyNames = items.map(i => i.raw_name);\n}\n\nconst rows = items.map((item, i) => ({\n  order_number: parseData.order_number || 'UNKNOWN',\n  item_name: item.raw_name,\n  pretty_name: prettyNames[i] || item.raw_name,\n  quantity: item.quantity,\n  expected_date: parseData.expected_date,\n  status: 'pending',\n  delivered_date: ''\n}));\n\nreturn rows.map(row => ({ json: row }));"
+      },
+      "id": "171c3c2a-d639-4529-9bf3-2828c4043633",
+      "name": "Merge Pretty Names & Explode Rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "value": "1NwqF3wKZU951okxNrNXOzvs_tPxf-hZIm3WZOJ-0V4U",
+          "__rl": true,
+          "mode": "id"
+        },
+        "sheetName": {
+          "value": "Amazon Deliveries",
+          "__rl": true,
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "order_number": "={{ $json.order_number }}",
+            "item_name": "={{ $json.item_name }}",
+            "pretty_name": "={{ $json.pretty_name }}",
+            "quantity": "={{ $json.quantity }}",
+            "expected_date": "={{ $json.expected_date }}",
+            "status": "={{ $json.status }}",
+            "delivered_date": "={{ $json.delivered_date }}"
+          },
+          "matchingColumns": [
+            "order_number",
+            "item_name"
+          ],
+          "schema": [
+            {
+              "id": "order_number",
+              "displayName": "order_number",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "item_name",
+              "displayName": "item_name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "pretty_name",
+              "displayName": "pretty_name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "quantity",
+              "displayName": "quantity",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "number"
+            },
+            {
+              "id": "expected_date",
+              "displayName": "expected_date",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "delivered_date",
+              "displayName": "delivered_date",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "781422eb-5a95-4735-8ac1-e5ebbca79a8f",
+      "name": "Google Sheets: Append Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.4,
+      "position": [
+        1520,
+        48
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "0cYjI4TjKF2BwA7G",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ $json.id }}",
+        "simple": false,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        512,
+        -80
+      ],
+      "id": "a508ac3d-aae7-48d3-9038-0a02f2349722",
+      "name": "Get a message",
+      "webhookId": "63ab3930-184f-408b-9c1e-b00b7dfd793a",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "lBw1pGp8GyPaziPM",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "Filter: Amazon Shipped Senders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter: Amazon Shipped Senders": {
+      "main": [
+        [
+          {
+            "node": "Filter: Shipped Subjects Only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter: Shipped Subjects Only": {
+      "main": [
+        [
+          {
+            "node": "Get a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Email Body": {
+      "main": [
+        [
+          {
+            "node": "Build OpenAI Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build OpenAI Prompt": {
+      "main": [
+        [
+          {
+            "node": "OpenAI: Clean Item Names",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI: Clean Item Names": {
+      "main": [
+        [
+          {
+            "node": "Merge Pretty Names & Explode Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Pretty Names & Explode Rows": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets: Append Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a message": {
+      "main": [
+        [
+          {
+            "node": "Parse Email Body",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Los_Angeles",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "versionId": "43ef59c0-b6a0-4324-9a7f-3f9f24dee68a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "X6g71NgalPNjSTdH",
+  "tags": []
+}

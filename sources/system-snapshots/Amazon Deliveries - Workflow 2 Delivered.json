@@ -1,0 +1,335 @@
+{
+  "name": "Amazon Deliveries - Workflow 2 Delivered",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyHour",
+              "minute": 5
+            }
+          ]
+        },
+        "filters": {
+          "q": "label:Amazon subject:Delivered"
+        }
+      },
+      "id": "df65172b-8302-4ac5-ba25-c6910ac29963",
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "lBw1pGp8GyPaziPM",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "delivered-sender",
+              "leftValue": "={{ $json.From }}",
+              "rightValue": "order-update@amazon.com",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "0ddca191-d935-4feb-9219-683af90d6e8a",
+      "name": "Filter: Delivered Senders",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "subject-delivered",
+              "leftValue": "={{ $json.Subject }}",
+              "rightValue": "^Delivered:",
+              "operator": {
+                "type": "string",
+                "operation": "regex"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "1c008afe-3dff-4421-80af-fd400843dbc8",
+      "name": "Filter: Delivered Subjects Only",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        448,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ $json.id }}",
+        "simple": false,
+        "options": {}
+      },
+      "id": "68d069c2-6587-4aa5-8717-7b08e9cc357c",
+      "name": "Get a message",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2,
+      "position": [
+        672,
+        0
+      ],
+      "webhookId": "6a077f5e-b8a5-4ad0-b2d2-597a48d2d6ca",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "lBw1pGp8GyPaziPM",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Parse Delivered Email\n// Extracts order number and sets delivered_date to today\n\nconst allItems = $input.all();\nconst results = [];\n\nfor (const item of allItems) {\n  const json = item.json;\n\n  // Get email body\n  let body = '';\n  if (json.text) {\n    body = typeof json.text === 'string' ? json.text : '';\n  } else if (json.body) {\n    body = typeof json.body === 'string' ? json.body : '';\n  }\n\n  // Extract order number\n  const orderMatch = body.match(/Order\\s*#\\s*\\n?\\s*([\\d-]+)/);\n  const order_number = orderMatch ? orderMatch[1].trim() : 'UNKNOWN';\n\n  // Delivered date = today\n  const today = new Date();\n  const delivered_date = today.toISOString().split('T')[0];\n\n  results.push({\n    json: {\n      order_number,\n      delivered_date\n    }\n  });\n}\n\nreturn results;\n"
+      },
+      "id": "f9b6f1a0-69d0-4985-aed1-ddc6bc6d04dc",
+      "name": "Parse Delivered Email",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        896,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "value": "1NwqF3wKZU951okxNrNXOzvs_tPxf-hZIm3WZOJ-0V4U",
+          "__rl": true,
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Amazon Deliveries",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NwqF3wKZU951okxNrNXOzvs_tPxf-hZIm3WZOJ-0V4U/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "order_number",
+              "lookupValue": "={{ $json.order_number }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ff4e68f6-7379-45da-98b7-dd41327b953c",
+      "name": "Sheets: Find Pending Rows",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        1120,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "0cYjI4TjKF2BwA7G",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "value": "1NwqF3wKZU951okxNrNXOzvs_tPxf-hZIm3WZOJ-0V4U",
+          "__rl": true,
+          "mode": "id"
+        },
+        "sheetName": {
+          "value": "Amazon Deliveries",
+          "__rl": true,
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "order_number": "={{ $json.order_number }}",
+            "item_name": "={{ $json.item_name }}",
+            "status": "delivered",
+            "delivered_date": "={{ $('Parse Delivered Email').first().json.delivered_date }}"
+          },
+          "matchingColumns": [
+            "order_number",
+            "item_name"
+          ],
+          "schema": [
+            {
+              "id": "order_number",
+              "displayName": "order_number",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "item_name",
+              "displayName": "item_name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            },
+            {
+              "id": "delivered_date",
+              "displayName": "delivered_date",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": false,
+              "display": true,
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9783b983-c9cf-4cf3-b934-bc33c8389e52",
+      "name": "Sheets: Update to Delivered",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        1344,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "0cYjI4TjKF2BwA7G",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "Filter: Delivered Senders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter: Delivered Senders": {
+      "main": [
+        [
+          {
+            "node": "Filter: Delivered Subjects Only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter: Delivered Subjects Only": {
+      "main": [
+        [
+          {
+            "node": "Get a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a message": {
+      "main": [
+        [
+          {
+            "node": "Parse Delivered Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Delivered Email": {
+      "main": [
+        [
+          {
+            "node": "Sheets: Find Pending Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sheets: Find Pending Rows": {
+      "main": [
+        [
+          {
+            "node": "Sheets: Update to Delivered",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "0c336128-f235-4233-a41d-9f46864ade12",
+  "meta": {
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "akXjxGhl5XRGKndy",
+  "tags": []
+}

@@ -1,0 +1,228 @@
+{
+  "name": "Sort LYNN files",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const CLIENT_TAG = \"Lynn\";\n\nconst MATRIX = {\n  \"Hallway-of-Doorknobs|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Hallway-of-Doorknobs|Untitled-Libby\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Hallway-of-Doorknobs|Workbook\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Hallway-of-Doorknobs|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Asset|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Copy|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Design|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Hallway-of-Doorknobs|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Hallway-of-Doorknobs|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Hallway-of-Doorknobs|Inspo\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Admin|Hallway-of-Doorknobs\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Hallway-of-Doorknobs|Info\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Backup|Hallway-of-Doorknobs\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Hallway-of-Doorknobs|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Hallway-of-Doorknobs|Interior\": \"1pvum72Gav0Uo8l2Gv7XqWLHAcp7ebOav\",\n  \"Hallway-of-Doorknobs|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Hallway-of-Doorknobs|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Hallway-of-Doorknobs|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Hallway-of-Doorknobs\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Hallway-of-Doorknobs|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Hallway-of-Doorknobs\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Untitled-Libby|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Untitled-Libby|Workbook\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Source|Untitled-Libby\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Asset|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Copy|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Design|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Marketing|Untitled-Libby\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Newsletter|Untitled-Libby\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Inspo|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Admin|Untitled-Libby\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Info|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Backup|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"Headshot|Untitled-Libby\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Interior|Untitled-Libby\": \"1i6YgttRUxsS8eDzNreRHS1kLyFjc8Vbm\",\n  \"OLD|Untitled-Libby\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Untitled-Libby|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"PSD|Untitled-Libby\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Untitled-Libby\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Social-image|Untitled-Libby\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Untitled-Libby\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Workbook|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Source|Workbook\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Asset|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Copy|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Design|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Marketing|Workbook\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Newsletter|Workbook\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Inspo|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Admin|Workbook\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Info|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Backup|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"Headshot|Workbook\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Interior|Workbook\": \"1_8XrgWpWpUec4gny3ZkWdj64jT2GJa9c\",\n  \"OLD|Workbook\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Video|Workbook\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"PSD|Workbook\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Workbook\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Social-image|Workbook\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Workbook\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Source|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Asset|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Copy|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Design|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Marketing|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Newsletter|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Inspo|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Admin|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Cover|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Info|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Backup|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Headshot|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Interior|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"OLD|Source\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Source|Video\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"PSD|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Featured-image|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Social-image|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"B-Roll|Source\": \"1I_HVTZQRAf_MjuUMOLp5geQoy-HQGOs5\",\n  \"Asset|Asset\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Copy\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Design\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Marketing\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Newsletter\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Inspo\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Admin|Asset\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Asset|Cover\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Info\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Backup\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Asset|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Asset|Interior\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Asset|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Asset|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Asset|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Asset|B-Roll\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Copy|Copy\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|Design\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|Marketing\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|Newsletter\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|Inspo\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Admin|Copy\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Copy|Cover\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|Info\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Backup|Copy\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Copy|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Copy|Interior\": \"1TlC1fMx-wUCxZY1xZiY0DEtoBfOgTShm\",\n  \"Copy|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Copy|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Copy|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Copy|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Copy|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Copy\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Design|Design\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Design|Marketing\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Design|Newsletter\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Design|Inspo\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Admin|Design\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Design\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Design|Info\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Backup|Design\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Design|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Design|Interior\": \"1Vcm6nyosh52PWrXYbZw0z1hhlfD5bNIo\",\n  \"Design|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Design|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Design|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Design|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Design|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Design\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Marketing|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Marketing|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Inspo|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Admin|Marketing\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Info|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Backup|Marketing\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Headshot|Marketing\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Interior|Marketing\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Marketing|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Marketing|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Marketing|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Marketing\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Marketing|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Marketing\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Newsletter|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Inspo|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Admin|Newsletter\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Info|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Backup|Newsletter\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Headshot|Newsletter\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Interior|Newsletter\": \"1nuzqw-fwBX5MyYFA7SCpoxlQ8wv3TzCW\",\n  \"Newsletter|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Newsletter|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Newsletter|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Newsletter\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Newsletter|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Newsletter\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Inspo|Inspo\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Admin|Inspo\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Inspo\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Info|Inspo\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Backup|Inspo\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Headshot|Inspo\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Inspo|Interior\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Inspo|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Inspo|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Inspo|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Inspo\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Inspo|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Inspo\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Admin|Admin\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|Cover\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|Info\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|Backup\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Admin|Headshot\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|Interior\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Admin|Video\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Admin|Featured-image\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|Social-image\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Admin|B-Roll\": \"1h1RSiSTe8nrUgL9drpkfcOyaHLW0Vmr5\",\n  \"Cover|Cover\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Cover|Info\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Backup|Cover\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Cover|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Cover|Interior\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Cover|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Cover|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Cover|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Cover|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Cover|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Cover\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Info|Info\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Backup|Info\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Headshot|Info\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Info|Interior\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Info|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Info|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Info|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Info\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Info|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Info\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Backup|Backup\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Backup|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Backup|Interior\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Backup|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Backup|Video\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Backup|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Backup|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Backup|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Backup\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Headshot|Headshot\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Headshot|Interior\": \"1hy21y43nwHZaLegDb93aDROu37Vp1JTn\",\n  \"Headshot|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Headshot|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Headshot|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Headshot\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Headshot|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Headshot\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Interior|Interior\": \"1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t\",\n  \"Interior|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Interior|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Interior|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Interior\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Interior|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Interior\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"OLD|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"OLD|Video\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"OLD|PSD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Featured-image|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"OLD|Social-image\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"B-Roll|OLD\": \"1WJLQaqCT-dbigvaPr0qwSqfWa2okmQuj\",\n  \"Video|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"PSD|Video\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"Social-image|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"B-Roll|Video\": \"1eErACYiOk3jQ2x4SoXSaidAA-qkmTaCG\",\n  \"PSD|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"PSD|Social-image\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"B-Roll|PSD\": \"1fVOTDgQc_VukLst1Vj82KytYqi_ziha0\",\n  \"Featured-image|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Featured-image|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Featured-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"Social-image|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|Social-image\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\",\n  \"B-Roll|B-Roll\": \"14uCOjuWxxahpyW0J5tCTsPM_LD3cvxyr\"\n};\n\nconst items = $input.all();\n\nreturn items.map(item => {\n  const data = item.json;\n  const filename = data.name || \"\";\n  const result = { ...data, filename };\n\n  const match = filename.match(/\\[(.*?)\\]/);\n  if (!match) {\n    result.tagStatus = \"no-brackets\";\n    result.routingStatus = \"unsorted-no-brackets\";\n    return { json: result };\n  }\n\n  const raw = match[1].trim();\n  if (!raw) {\n    result.tagStatus = \"empty-brackets\";\n    result.routingStatus = \"unsorted-empty-brackets\";\n    return { json: result };\n  }\n\n  const tags = raw.split(/\\s+/);\n  const nonClientTags = tags.filter(\n    t => t.toLowerCase() !== CLIENT_TAG.toLowerCase()\n  );\n\n  result.rawTagString = raw;\n  result.tags = tags;\n  result.nonClientTags = nonClientTags;\n\n  if (nonClientTags.length === 0) {\n    result.tagStatus = \"no-nonclient-tags\";\n    result.routingStatus = \"unsorted-not-enough-tags\";\n    return { json: result };\n  }\n\n  let key;\n  let targetFolderId;\n\n  if (nonClientTags.length === 1) {\n    const tag = nonClientTags[0];\n    key = `${tag}|${tag}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  } else {\n    const tagA = nonClientTags[0];\n    const tagB = nonClientTags[1];\n    const sortedPair = [tagA, tagB].sort();\n    key = `${sortedPair[0]}|${sortedPair[1]}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  }\n\n  if (!targetFolderId) {\n    result.tagStatus = \"no-matrix-match\";\n    result.routingStatus = \"unsorted-no-matrix-match\";\n    return { json: result };\n  }\n\n  result.tagStatus = \"ok\";\n  result.routingStatus = \"ok\";\n  result.targetFolderId = targetFolderId;\n\n  return { json: result };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -576,
+        -240
+      ],
+      "id": "ce45b50b-9037-46fd-a741-1c80bc6b1bd1",
+      "name": "Parse tags"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7eb76f4d-a7a5-4452-aa9b-fb76656abbb8",
+              "leftValue": "={{ $json.routingStatus }}",
+              "rightValue": "ok",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -368,
+        -240
+      ],
+      "id": "676ddf7a-242b-4f7c-b490-4a74bea68370",
+      "name": "If routing okay"
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "={{$json[\"targetFolderId\"]}}",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -288
+      ],
+      "id": "477f142c-8266-4606-80d0-c815f45c940b",
+      "name": "Move to target",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1tp5aFpswfMYtgc_L4jUzXybzxgwJf2_t",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -128
+      ],
+      "id": "a79cf126-1fa2-46f5-a544-af5fa10927d3",
+      "name": "Move to unsorted",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -960,
+        -240
+      ],
+      "id": "dcdae55a-0486-458b-bdcc-256fdbf70ac0",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "'1IXaRX3SbkmKT6iXoSECXn54qDOOp6lWI' in parents and trashed = false and mimeType != 'application/vnd.google-apps.folder'",
+        "returnAll": true,
+        "filter": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -768,
+        -240
+      ],
+      "id": "eb586868-c3f0-4f8e-a64c-f00c3ed3ef42",
+      "name": "list files in /LYNN",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Parse tags": {
+      "main": [
+        [
+          {
+            "node": "If routing okay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If routing okay": {
+      "main": [
+        [
+          {
+            "node": "Move to target",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Move to unsorted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "list files in /LYNN",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "list files in /LYNN": {
+      "main": [
+        [
+          {
+            "node": "Parse tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a69a1d8e-816f-45e9-b5ba-140006ebf156",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "1MzJgJLu4bfYWJyi",
+  "tags": []
+}

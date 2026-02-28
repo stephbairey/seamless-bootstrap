@@ -1,0 +1,2106 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:mjbairey@gmail.com
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240205
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert9122db6d10b70afd31ec12019ba62150
+CREATED:19000101T120000Z
+DESCRIPTION:Prepare a media kit with book and author info\, add to website'
+ s 'about' page.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Create a Media Kit
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20230221T190000
+DTEND;TZID=America/Los_Angeles:20230221T210000
+RRULE:FREQ=WEEKLY;UNTIL=20230228T075959Z;BYDAY=TU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:6e7l1nn94co8d1of0b41llsvff@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=goldnb
+ ee@gmail.com;X-NUM-GUESTS=0:mailto:goldnbee@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=do
+ bieresq@gmail.com;X-NUM-GUESTS=0:mailto:dobieresq@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=be
+ cker356@mac.com;X-NUM-GUESTS=0:mailto:becker356@mac.com
+CREATED:20230220T170110Z
+DESCRIPTION:Zoom: <a href="https://us06web.zoom.us/j/9927228163?pwd=VDNaOW8
+ wMFZpcWh0UnlVWFB1NTZIZz09"><u>https://us06web.zoom.us/j/9927228163?pwd=VDNa
+ OW8wMFZpcWh0UnlVWFB1NTZIZz09</u></a><br><br>Online folder: <a href="https:/
+ /drive.google.com/drive/folders/12OBjtAwBLHpsb5EjJXARc7fFlEA2SNeW?usp=shari
+ ng">https://drive.google.com/drive/folders/12OBjtAwBLHpsb5EjJXARc7fFlEA2SNe
+ W?usp=sharing</a> (audio recordings\, critique texts)
+LAST-MODIFIED:20230228T172209Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Tuesday Critique Group
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250914T120000
+DTEND;TZID=America/Los_Angeles:20250914T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250921T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250914T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bbuckm
+ an@outlook.com;X-NUM-GUESTS=0:mailto:bbuckman@outlook.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jill@l
+ egendarykeynotes.com;X-NUM-GUESTS=0:mailto:jill@legendarykeynotes.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<i>9/12 update: critique schedule changes</i><br><br><b>Purpose
+ : </b>We meet to keep our creative projects moving forward\, and to share o
+ ur support with other writers of all experience levels. <i>Your writing des
+ erves space.</i><br><b><br></b><br><b>Meeting Cadence</b><ul><li>Sundays at
+  Noon PDT (<a href="https://www.timeanddate.com/worldclock/fixedtime.html?m
+ sg=Next+Sunday+Cohort+Meeting&amp\;iso=20250914T12&amp\;p1=202&amp\;ah=2" t
+ arget="_blank"><u>see this in your time zone</u></a>)</li><li>Thursdays at 
+ 1 PM PDT (<a href="https://www.timeanddate.com/worldclock/fixedtime.html?ms
+ g=Next+Thursday+Cohort+Meeting&amp\;iso=20250918T13&amp\;p1=202&amp\;ah=2" 
+ target="_blank"><u>see this in your time zone</u></a>)</li></ul>The zoom li
+ nk is the same every time. » <a href="https://us06web.zoom.us/j/84177304444
+ ?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blank"><u><b>Start Cohort M
+ eeting</b></u></a><br><br>What do we do?<br><ul><li><b>10 minutes:</b> each
+  say what we intend to work on</li><li><b>50 minutes:</b> cameras and mics 
+ off\, we write</li><li><b>10 minutes:</b> each say how it went and what we'
+ re doing next</li><li><b>50 minutes:</b> cameras and mics off\, we write</l
+ i><li><b>5 minutes:</b> quick check in and end the meeting</li></ul>Sundays
+  only: After the meeting\, if you can stay\, we critique the work of whomev
+ er is scheduled.<br> <br><b>CRITIQUE SCHEDULE</b><i> (updated when needed)<
+ /i><ul><li>Maya – September 14</li><li>Brandi – September 21</li><li>Devon 
+ – September 28</li><li>Iris – October 5</li><li>Julie – October 12</li><li>
+ Kay – October 19<br></li><li></li><li>Lynn – October 26</li><li>Maura – Nov
+ ember 2</li></ul>If you don't have work to be critiqued\, we'll skip you un
+ til you do. If you can't stay late on Sunday\, an emailed critique to the a
+ uthor is suggested but not required.<br> <br>We don't take attendance – <b>
+ come as you can\, when you can. </b><br><br>Questions? <a href="mailto:maya
+ @bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240205
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert79157c16030218871c835e45e0012f71
+CREATED:19000101T120000Z
+DESCRIPTION:Set up an account on Createspace and upload print-ready book fi
+ les.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Upload Paperback
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241114T184000Z
+DTEND:20241114T205000Z
+DTSTAMP:20260228T002011Z
+UID:2lvfavfq3uk1tvntnpmp2q8jon@google.com
+CREATED:20241108T180724Z
+DESCRIPTION:Southwest Airlines flight 2525\nPortland PDX 10:40am (local tim
+ e) - Las Vegas LAS 12:50pm (local time)\n\nConfirmation number: 4TEOAY
+LAST-MODIFIED:20241108T180724Z
+LOCATION:Portland PDX
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Flight to Las Vegas (WN 2525)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221223T170000Z
+DTEND:20221223T173000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mburgess2@sheffield.ac.uk:mailto:mburgess2@sheffield.ac.uk
+UID:26u3qd8ruciccbbsi15ad6vbft@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mburge
+ ss2@sheffield.ac.uk;X-NUM-GUESTS=0:mailto:mburgess2@sheffield.ac.uk
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=stephb
+ airey@gmail.com;X-NUM-GUESTS=0:mailto:stephbairey@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/jrs-akdg-owi
+CREATED:20221222T212925Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/jr
+ s-akdg-owi\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20221223T173025Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Interview
+TRANSP:OPAQUE
+ATTACH;FILENAME="Interview (2022-12-23 17:03 GMT).mp4";FMTTYPE=video/mp4:ht
+ tps://drive.google.com/file/d/170GsaKGG6yru_zpYpuxGtN7Ag3I-EDUG/view?usp=dr
+ ive_web
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20231019T120000
+DTEND;TZID=America/Los_Angeles:20231019T130000
+DTSTAMP:20260228T002011Z
+UID:4ns58t79rfrv1p8lbqpjk0pojc@google.com
+RECURRENCE-ID;TZID=America/Los_Angeles:20231019T120000
+CREATED:20230902T025250Z
+DESCRIPTION:<a href="https://us02web.zoom.us/w/83786456676?tk=2JxYfNLeeGHVG
+ cm9tijtrFfUBQwR3b5KZYjXkkzMDaQ.DQQAAAATgg_eZBZ1d21UTHJUcVFSYWVzd1pzUi1KaW5R
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp\;pwd=ZGtoSHJkM09FdVhIUnZvKzhRSk5kdz
+ 09"><u>https://us02web.zoom.us/w/<wbr />83786456676?tk=<wbr />2JxYfNLeeGHVG
+ cm9tijtrFfUBQwR3b<wbr />5KZYjXkkzMDaQ.DQQAAAATgg_<wbr />eZBZ1d21UTHJUcVFSYW
+ Vzd1pzUi1Ka<wbr />W5RAAAAAAAAAAAAAAAAAAAAAAAAAAA<wbr />AAAAAAAA&amp\;pwd=<w
+ br />ZGtoSHJkM09FdVhIUnZvKzhRSk5kdz<wbr />09</u></a> <br><br>Here is the Zo
+ om link to register for the online meeting: <a href="https://us02web.zoom.u
+ s/meeting/register/tZcqf--sqz0sHdI396Y97lDuIqCmAjYqbE1T">https://us02web.zo
+ om.us/meeting/register/tZcqf--sqz0sHdI396Y97lDuIqCmAjYqbE1T</a>
+LAST-MODIFIED:20231202T185850Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Group
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241227T230000Z
+DTEND:20241228T040000Z
+DTSTAMP:20260228T002011Z
+UID:317knomouprn3u240a39112qce@google.com
+CREATED:20241226T213449Z
+LAST-MODIFIED:20241226T213816Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bairey Family over
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250925T130000
+DTEND;TZID=America/Los_Angeles:20250925T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20251002T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250925T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jill@l
+ egendarykeynotes.com;X-NUM-GUESTS=0:mailto:jill@legendarykeynotes.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<span><i>9/21: updated critique schedule</i><br><br><b>Purpose:
+  </b>We meet to keep our creative projects moving forward\, and to share ou
+ r support with other writers of all experience levels. <i>Your writing dese
+ rves space.</i><br><b></b><br><b>Meeting Cadence</b><ul><li>Sundays at Noon
+  PDT (<a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Ne
+ xt+Sunday+Cohort+Meeting&iso=20250914T12&p1=202&ah=2" target="_blank"><u>se
+ e this in your time zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="h
+ ttps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Coho
+ rt+Meeting&iso=20250918T13&p1=202&ah=2" target="_blank"><u>see this in your
+  time zone</u></a>)</li></ul>The zoom link is the same every time. » <a hre
+ f="https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W
+ .1" target="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do w
+ e do?<br><ul><li><b>10 minutes:</b> each say what we intend to work on</li>
+ <li><b>50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minute
+ s:</b> each say how it went and what we're doing next</li><li><b>50 minutes
+ :</b> cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check
+  in and end the meeting</li></ul>Sundays only: After the meeting\, if you c
+ an stay\, we critique the work of whomever is scheduled.<br> <br><b>CRITIQU
+ E SCHEDULE</b><i> (updated when needed)</i><ul><li>Devon – September 28</li
+ ><li>Iris – October 5</li><li>Julie – October 12</li><li>Kay – October 19</
+ li><li>Lynn – October 26</li><li>Maura – November 2</li><li>Maya – November
+  9</li><li>Brandi – November 16 </li></ul>If you don't have work to be crit
+ iqued\, we'll skip you until you do. If you can't stay late on Sunday\, an 
+ emailed critique to the author is suggested but not required.<br> <br>We do
+ n't take attendance – <b>come as you can\, when you can. </b><br><br>Questi
+ ons? <a href="mailto:maya@bairey.com" target="_blank"><u>maya@bairey.com</u
+ ></a></span>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240206
+DTEND;VALUE=DATE:20240207
+DTSTAMP:20260228T002011Z
+UID:CSVConvert5c2358435efb95c1451b27da4cf40d52
+CREATED:19000101T120000Z
+DESCRIPTION:Post on the ARC and Giveaways group on Goodreads.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Goodreads Group
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241117T040000Z
+DTEND:20241117T050000Z
+DTSTAMP:20260228T002011Z
+UID:15vg5phf63g42hd5e1r1v81c29@google.com
+CREATED:20241113T230052Z
+LAST-MODIFIED:20241113T230109Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY: Julie Zoom
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250308T200000Z
+DTEND:20250308T210000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:30bl2ainmhr5477cmab2v6n5to@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ly
+ nnahaller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+CREATED:20250307T205907Z
+DESCRIPTION:<a href="https://us06web.zoom.us/j/9927228163?pwd=VDNaOW8wMFZpc
+ Wh0UnlVWFB1NTZIZz09">https://us06web.zoom.us/j/9927228163?pwd=VDNaOW8wMFZpc
+ Wh0UnlVWFB1NTZIZz09</a>
+LAST-MODIFIED:20250307T205907Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Website planning
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241107T130000
+DTEND;TZID=America/Los_Angeles:20241107T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250206T075959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<i>Extending this indefinitely since we're all still into it!</
+ i><br><b><br></b><br><b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a 
+ href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday
+ +Cohort+Meeting&iso=20240922T12&p1=202&ah=2" target="_blank">see this in yo
+ ur time zone</a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timea
+ nddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=2
+ 0240919T13&p1=202&ah=2" target="_blank">see this in your time zone</a>)</li
+ ></ul><br>The zoom link is the same every time. Just click » <a href="https
+ ://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" targ
+ et="_blank"><b>Start Cohort Meeting</b></a><br><br>You can forward this to 
+ others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" target="
+ _blank">maya@bairey.com</a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Fall 2024 Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240204
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvertb543fbb66bd95a1a3f5c8ca891e8f24d
+CREATED:19000101T120000Z
+DESCRIPTION:Compile a list of reviewers and send them advanced copies\, esp
+ ecially those preferring digital formats.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Research Book Reviewers
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241012T190000Z
+DTEND:20241012T220000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:7igthtsdk7ncag4j9503097tn0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+CREATED:20241010T190733Z
+DESCRIPTION:Meet here: <a href="https://www.google.com/url?q=https://us06we
+ b.zoom.us/j/9927228163?pwd%3DVDNaOW8wMFZpcWh0UnlVWFB1NTZIZz09&amp\;sa=D&amp
+ \;source=calendar&amp\;usd=2&amp\;usg=AOvVaw0DRWKg8LQfTEdOub7lFV-l" target=
+ "_blank">https://us06web.zoom.us/j/9927228163?pwd=VDNaOW8wMFZpcWh0UnlVWFB1N
+ TZIZz09</a><br><br>Be ready to sing along! Bevvies\, popcorn\, whatever you
+  need!
+LAST-MODIFIED:20241012T113703Z
+LOCATION:Zoom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Les Mis Watch Party
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241117T220000Z
+DTEND:20241118T020000Z
+DTSTAMP:20260228T002011Z
+UID:3tviovl01koh28dik3qdcrq3t1@google.com
+CREATED:20241108T191306Z
+LAST-MODIFIED:20241108T191306Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Jodi's Drive
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240206
+DTEND;VALUE=DATE:20240207
+DTSTAMP:20260228T002011Z
+UID:CSVConverte3b06146a0aa4f6b902b190070757203
+CREATED:19000101T120000Z
+DESCRIPTION:Sign up for an author central account on Amazon and create an a
+ uthor page. This allows prospective readers an opportunity to learn more ab
+ out you without leaving the Amazon website.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Set Up Your Author Page
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250831T120000
+DTEND;TZID=America/Los_Angeles:20250831T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250914T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250831T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bbuckm
+ an@outlook.com;X-NUM-GUESTS=0:mailto:bbuckman@outlook.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank"><u>see this in your tim
+ e zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeand
+ date.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=202
+ 40919T13&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>
+ )</li></ul><br>The zoom link is the same every time. Just click » <a href="
+ https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1"
+  target="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do we d
+ o?<br><ul><li><b>10 minutes:</b> each say what we intend to work on</li><li
+ ><b>50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minutes:<
+ /b> each say how it went and what we're doing next</li><li><b>50 minutes:</
+ b> cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check in
+  and end the meeting</li></ul>Sundays only:<br><ul><li><b>The last 20 minut
+ es:</b> critiquing the work of whomever is scheduled </li><li><b>After the 
+ meeting:</b> 30 minutes of discussion of a book we're reading <i>(optional)
+ </i></li></ul>We don't take attendance – come as you can\, when you can. <b
+ r><br>You can invite others at will.<br><br>Questions? <a href="mailto:maya
+ @bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240208
+DTEND;VALUE=DATE:20240209
+DTSTAMP:20260228T002011Z
+UID:CSVConvert90e0503f8d2705f992693b9e2e71e4c6
+CREATED:19000101T120000Z
+DESCRIPTION:Make a regular blog post.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Write and Publish Blog Post
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241227T083000
+DTEND;TZID=America/Los_Angeles:20241227T173000
+DTSTAMP:20260228T002011Z
+UID:0fkh38mdc0krtqaace7torg3r9@google.com
+RECURRENCE-ID;TZID=America/Los_Angeles:20241227T080000
+CREATED:20241226T213412Z
+LAST-MODIFIED:20250102T180802Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241015T010000Z
+DTEND:20241015T020000Z
+DTSTAMP:20260228T002011Z
+UID:6i9mqaabpgu1gsndtd1dcr4i40@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CREATED:20241014T231543Z
+DESCRIPTION:Nom Nom Restaurant and Grill\n801 C Street\, Vancouver\, WA\, 9
+ 8660\, US\n+1 360-718-7360
+LAST-MODIFIED:20241014T231543Z
+LOCATION:Nom Nom Restaurant and Grill\, 801 C Street\, Vancouver\, WA\, 986
+ 60\, US
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Reservation at Nom Nom Restaurant and Grill
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20230619T180000
+DTEND;TZID=America/Los_Angeles:20230619T190000
+RRULE:FREQ=WEEKLY;UNTIL=20230717T065959Z;BYDAY=MO
+EXDATE;TZID=America/Los_Angeles:20230626T180000
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:7ndkr6gf3gntuop1eah37q4ci2@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=markwi
+ lliamdavis@gmail.com;X-NUM-GUESTS=0:mailto:markwilliamdavis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=kenned
+ y.eileen7@gmail.com;X-NUM-GUESTS=0:mailto:kennedy.eileen7@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ hngorhamrueter@gmail.com;X-NUM-GUESTS=0:mailto:johngorhamrueter@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=daniel
+ amorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/ovf-ruyv-uqd
+CREATED:20230618T195754Z
+DESCRIPTION:<a href="https://us06web.zoom.us/j/81425338260?pwd=cWxZRlhId1dO
+ cVdqbHlVNlRML045QT09">https://us06web.zoom.us/j/81425338260?pwd=cWxZRlhId1d
+ OcVdqbHlVNlRML045QT09</a><br><br>See you there! Happy writing!\n\n-::~:~::~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~
+ ::-\nJoin with Google Meet: https://meet.google.com/ovf-ruyv-uqd\n\nLearn m
+ ore about Meet at: https://support.google.com/a/users/answer/9282720\n\nPle
+ ase do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230711T164056Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Critique Group - Willamette Writers
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241114
+DTEND;VALUE=DATE:20241118
+DTSTAMP:20260228T002011Z
+UID:07lmel77krh06jc48frmm4tucj@google.com
+CREATED:20241108T180711Z
+DESCRIPTION:The LINQ Hotel + Experience\n3535 Las Vegas Boulevard South\, L
+ as Vegas\, NV 89109\, USA\n+1 702-731-3311\n\nCheck-in: Nov 14\, 2024 4:00p
+ m\nCheck-out: Nov 17\, 2024 11:00am\n
+LAST-MODIFIED:20241108T180711Z
+LOCATION:3535 Las Vegas Boulevard South\, Las Vegas\, NV 89109\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at The LINQ
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240202
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvertb654f67c43a015d85fe16a5de10027fd
+CREATED:19000101T120000Z
+DESCRIPTION:Research and list top book promotion sites\, reach out for adva
+ nce preparation\, and schedule promotions for the first month.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Prepare List of Book Promotion Sites
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231003T150000Z
+DTEND:20231003T160000Z
+DTSTAMP:20260228T002011Z
+UID:cgsmcor16spmcb9h6ti6cb9kcli30b9ocop3eb9hcop6ce1iccojiphn68@google.com
+CREATED:20230926T153747Z
+LAST-MODIFIED:20230926T153747Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Steph: tongue doctor
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250406T120000
+DTEND;TZID=America/Los_Angeles:20250406T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250629T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250406T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank"><u>see this in your tim
+ e zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeand
+ date.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=202
+ 40919T13&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>
+ )</li></ul><br>The zoom link is the same every time. Just click » <a href="
+ https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1"
+  target="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do we d
+ o?<br><ul><li><b>10 minutes:</b> each say what we intend to work on</li><li
+ ><b>50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minutes:<
+ /b> each say how it went and what we're doing next</li><li><b>50 minutes:</
+ b> cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check in
+  and end the meeting</li></ul>Sundays only:<br><ul><li><b>The last 20 minut
+ es:</b> critiquing the work of whomever is scheduled </li><li><b>After the 
+ meeting:</b> 30 minutes of discussion of a book we're reading <i>(optional)
+ </i></li></ul>We don't take attendance – come as you can\, when you can. <b
+ r><br>You can invite others at will.<br><br>Questions? <a href="mailto:maya
+ @bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241114T173000Z
+DTEND:20241114T220000Z
+DTSTAMP:20260228T002011Z
+UID:0lkqcd3tven83f452tcndl1iqh@google.com
+CREATED:20241108T182756Z
+LAST-MODIFIED:20241108T190541Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Jodi's Drive (approx)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20240915T120000
+DTEND;TZID=America/Los_Angeles:20240915T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241110T075959Z;INTERVAL=1;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:ZOOM84177304444@zoom.us
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=Steph 
+ Bairey;X-NUM-GUESTS=0:mailto:stephbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ayamew
+ rites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ho
+ wardwho@gmail.com;X-NUM-GUESTS=0:mailto:howardwho@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jk
+ hamilton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cc
+ naden@yahoo.com;X-NUM-GUESTS=0:mailto:ccnaden@yahoo.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<b>Meeting Cadence</b><br><ul><li>Sundays at Noon PDT (<a href=
+ "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Coho
+ rt+Meeting&amp\;iso=20240922T12&amp\;p1=202&amp\;ah=2" target="_blank"><u>s
+ ee this in your time zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="
+ https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Coh
+ ort+Meeting&amp\;iso=20240919T13&amp\;p1=202&amp\;ah=2" target="_blank"><u>
+ see this in your time zone</u></a>)</li></ul><br><br>The zoom link is the s
+ ame every time. Just click » <a href="https://us06web.zoom.us/j/84177304444
+ ?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blank"><u><b>Start Cohort M
+ eeting</b></u></a><br><br>You can forward this to others at will.<br><br>Qu
+ estions? <a href="mailto:maya@bairey.com"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20241121T193644Z
+LOCATION:Zoom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Fall 2024 Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250629T120000
+DTEND;TZID=America/Los_Angeles:20250629T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250831T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250629T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank"><u>see this in your tim
+ e zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeand
+ date.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=202
+ 40919T13&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>
+ )</li></ul><br>The zoom link is the same every time. Just click » <a href="
+ https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1"
+  target="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do we d
+ o?<br><ul><li><b>10 minutes:</b> each say what we intend to work on</li><li
+ ><b>50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minutes:<
+ /b> each say how it went and what we're doing next</li><li><b>50 minutes:</
+ b> cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check in
+  and end the meeting</li></ul>Sundays only:<br><ul><li><b>The last 20 minut
+ es:</b> critiquing the work of whomever is scheduled </li><li><b>After the 
+ meeting:</b> 30 minutes of discussion of a book we're reading <i>(optional)
+ </i></li></ul>We don't take attendance – come as you can\, when you can. <b
+ r><br>You can invite others at will.<br><br>Questions? <a href="mailto:maya
+ @bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241115T220000Z
+DTEND:20241115T230000Z
+DTSTAMP:20260228T002011Z
+UID:0rnbd2untng5g205vchgst1qul@google.com
+CREATED:20241108T180957Z
+LAST-MODIFIED:20241113T225908Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Sal Zoom
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250918T130000
+DTEND;TZID=America/Los_Angeles:20250918T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250925T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250918T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jill@l
+ egendarykeynotes.com;X-NUM-GUESTS=0:mailto:jill@legendarykeynotes.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<i>9/12 update: critique schedule changes</i><br><br><b>Purpose
+ : </b>We meet to keep our creative projects moving forward\, and to share o
+ ur support with other writers of all experience levels. <i>Your writing des
+ erves space.</i><br><b><br></b><br><b>Meeting Cadence</b><ul><li>Sundays at
+  Noon PDT (<a href="https://www.timeanddate.com/worldclock/fixedtime.html?m
+ sg=Next+Sunday+Cohort+Meeting&amp\;iso=20250914T12&amp\;p1=202&amp\;ah=2" t
+ arget="_blank"><u><u>see this in your time zone</u></u></a>)</li><li>Thursd
+ ays at 1 PM PDT (<a href="https://www.timeanddate.com/worldclock/fixedtime.
+ html?msg=Next+Thursday+Cohort+Meeting&amp\;iso=20250918T13&amp\;p1=202&amp\
+ ;ah=2" target="_blank"><u><u>see this in your time zone</u></u></a>)</li></
+ ul>The zoom link is the same every time. » <a href="https://us06web.zoom.us
+ /j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blank"><u><u>
+ <b>Start Cohort Meeting</b></u></u></a><br><br>What do we do?<br><ul><li><b
+ >10 minutes:</b> each say what we intend to work on</li><li><b>50 minutes:<
+ /b> cameras and mics off\, we write</li><li><b>10 minutes:</b> each say how
+  it went and what we're doing next</li><li><b>50 minutes:</b> cameras and m
+ ics off\, we write</li><li><b>5 minutes:</b> quick check in and end the mee
+ ting</li></ul>Sundays only: After the meeting\, if you can stay\, we critiq
+ ue the work of whomever is scheduled.<br> <br><b>CRITIQUE SCHEDULE</b><i> (
+ updated when needed)</i><ul><li>Maya – September 14</li><li>Brandi – Septem
+ ber 21</li><li>Devon – September 28</li><li>Iris – October 5</li><li>Julie 
+ – October 12</li><li>Kay – October 19</li><li>Lynn – October 26</li><li>Mau
+ ra – November 2</li></ul>If you don't have work to be critiqued\, we'll ski
+ p you until you do. If you can't stay late on Sunday\, an emailed critique 
+ to the author is suggested but not required.<br> <br>We don't take attendan
+ ce – <b>come as you can\, when you can. </b><br><br>Questions? <a href="mai
+ lto:maya@bairey.com" target="_blank"><u><u>maya@bairey.com</u></u></a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240206
+DTEND;VALUE=DATE:20240207
+DTSTAMP:20260228T002011Z
+UID:CSVConvertf868af591d97d1f7143b9faf98a29a0e
+CREATED:19000101T120000Z
+DESCRIPTION:Create <4000 character book description including 7 keywords\, 
+ choose 10 categories in KDP.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Book Description
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250101T200000Z
+DTEND:20250102T040000Z
+DTSTAMP:20260228T002011Z
+UID:0a84vlf30je5com84qp0sqk6fv@google.com
+CREATED:20241226T213746Z
+LAST-MODIFIED:20241226T213919Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Hang @ Maya's
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240928T190000Z
+DTEND:20240928T220000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:4hun3smck4ll82tpigvrg553a3@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=su
+ limama@gmail.com;X-NUM-GUESTS=0:mailto:sulimama@gmail.com
+CREATED:20240923T195616Z
+DESCRIPTION:Meet here: <a href="https://us06web.zoom.us/j/9927228163?pwd=VD
+ NaOW8wMFZpcWh0UnlVWFB1NTZIZz09">https://us06web.zoom.us/j/9927228163?pwd=VD
+ NaOW8wMFZpcWh0UnlVWFB1NTZIZz09</a><br><br>Be ready to sing along! Bevvies\,
+  popcorn\, whatever you need!
+LAST-MODIFIED:20240928T180841Z
+LOCATION:Zoom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Hamilton Watch Party
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250626T130000
+DTEND;TZID=America/Los_Angeles:20250626T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250918T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250626T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=su
+ limama@gmail.com;X-NUM-GUESTS=0:mailto:sulimama@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=da
+ nielamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank">see this in your time z
+ one</a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeanddate.co
+ m/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=20240919T1
+ 3&p1=202&ah=2" target="_blank">see this in your time zone</a>)</li></ul><br
+ >The zoom link is the same every time. Just click » <a href="https://us06we
+ b.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blan
+ k"><b>Start Cohort Meeting</b></a><br><br>What do we do?<br><ul><li><b>10 m
+ inutes:</b> each say what we intend to work on</li><li><b>50 minutes:</b> c
+ ameras and mics off\, we write</li><li><b>10 minutes:</b> each say how it w
+ ent and what we're doing next</li><li><b>50 minutes:</b> cameras and mics o
+ ff\, we write</li><li><b>5 minutes:</b> quick check in and end the meeting<
+ /li></ul>Sundays only:<br><ul><li><b>The last 20 minutes:</b> critiquing th
+ e work of whomever is scheduled </li><li><b>After the meeting:</b> 30 minut
+ es of discussion of a book we're reading <i>(optional)</i></li></ul>We don'
+ t take attendance – come as you can\, when you can. <br><br>You can invite 
+ others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" target="
+ _blank">maya@bairey.com</a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241114T182500Z
+DTEND:20241114T225500Z
+DTSTAMP:20260228T002011Z
+UID:3me4ouk819cc2f2bl8qdk148hi@google.com
+CREATED:20241108T190451Z
+LAST-MODIFIED:20241108T191022Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Flight to Las Vegas (UA 4834/1066)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241116T220000Z
+DTEND:20241117T000000Z
+DTSTAMP:20260228T002011Z
+UID:05pc9a8sk69ic14uq20bnd85mp@google.com
+CREATED:20241108T180816Z
+LAST-MODIFIED:20241108T191140Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:The Sphere
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241223T030000Z
+DTEND:20241223T053000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:4fcaj57vm2prjtsstce7147nu7@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jk
+ hamilton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jf
+ jinca@gmail.com;X-NUM-GUESTS=0:mailto:jfjinca@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=co
+ untrybear30@msn.com;X-NUM-GUESTS=0:mailto:countrybear30@msn.com
+CREATED:20241222T211258Z
+DESCRIPTION:Zoom link: <a href="https://us06web.zoom.us/j/9927228163?pwd=VD
+ NaOW8wMFZpcWh0UnlVWFB1NTZIZz09">https://us06web.zoom.us/j/9927228163?pwd=VD
+ NaOW8wMFZpcWh0UnlVWFB1NTZIZz09</a>
+LAST-MODIFIED:20241222T215658Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Squad Watch Party
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240208
+DTEND;VALUE=DATE:20240209
+DTSTAMP:20260228T002011Z
+UID:CSVConvert93e16a714072ca59655802719a1bfd5a
+CREATED:19000101T120000Z
+DESCRIPTION:Post link to blog post on Twitter\, Facebook\, TikTok\, Instagr
+ am
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Post to Socials
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250304T183000Z
+DTEND:20250304T193000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:6tbhj2meej8pctv2q7o2uvhlms@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=po
+ rtlandpoet@gmail.com;X-NUM-GUESTS=0:mailto:portlandpoet@gmail.com
+CREATED:20250212T184232Z
+DESCRIPTION:We will go over potential book covers\, blurbs and back cover\,
+  continuing <span>production of the interior pages\, </span><span>and anyth
+ ing else that needs talking over.</span>
+LAST-MODIFIED:20250213T162220Z
+LOCATION:The 909 Cafe\, 909 N Tomahawk Island Dr UNIT 102\, Portland\, OR 9
+ 7217\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Maya/Carolyn: Metrophobia
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240131
+DTEND;VALUE=DATE:20240201
+DTSTAMP:20260228T002011Z
+UID:CSVConvert0a55aa3cbb49807162762cf954c61f22
+CREATED:19000101T120000Z
+DESCRIPTION:Develop a landing page on website with book cover\, title\, des
+ cription\, etc.\, and link it from key pages.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Create Landing Page On Website
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240205
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert7808fc22963e31708aa60102cefb3f35
+CREATED:19000101T120000Z
+DESCRIPTION:Create a Goodreads account and set up an author profile for the
+  book.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Create Goodreads
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240131
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert013bee4bc5a0caf019cfdc04f7b76dc1
+CREATED:19000101T120000Z
+DESCRIPTION:Create assets and copy\, then schedule social posts on Twitter\
+ , Insta\, Facebook\, TikTok\, YouTube\, and Goodreads. Create a mix of cont
+ ent\, focusing 20% on book promotion and 80% casual. Add dates to this plan
+ .
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Finalize Social Media Strategy
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240130
+DTEND;VALUE=DATE:20240201
+DTSTAMP:20260228T002011Z
+UID:CSVConvert2d5c4df71db50717db9cea8cb16bfebf
+CREATED:19000101T120000Z
+DESCRIPTION:Develop outline of promotional materials like videos\, blog pos
+ ts\, memes\, etc.\, for social media and other platforms.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Start Creating Promotional Material
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241117T233000Z
+DTEND:20241118T015500Z
+DTSTAMP:20260228T002011Z
+UID:0dq5q0tnt9rvbhrbl579strcnk@google.com
+CREATED:20241108T180743Z
+DESCRIPTION:Southwest Airlines flight 2763\nLas Vegas LAS 3:30pm (local tim
+ e) - Portland PDX 5:55pm (local time)\n\nConfirmation number: 4TEOAY
+LAST-MODIFIED:20241108T180743Z
+LOCATION:Las Vegas LAS
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Flight to Portland (WN 2763)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250101T050000Z
+DTEND:20250101T060000Z
+DTSTAMP:20260228T002011Z
+UID:6gpj2pb4c4rjcb9k6phmab9kcos68b9o6hgjcb9o68q36e1j6so66ob174@google.com
+CREATED:20241227T224255Z
+LAST-MODIFIED:20241227T224255Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:NYE Party
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241228T000000Z
+DTEND:20250102T160000Z
+DTSTAMP:20260228T002011Z
+UID:64pmccppc4rj4b9nc4r6ab9k6cpj0b9o6csjcbb1copj6phm70sjip346k@google.com
+CREATED:20241224T062832Z
+LAST-MODIFIED:20241224T062832Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Lynn
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250206T130000
+DTEND;TZID=America/Los_Angeles:20250206T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250327T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250206T210000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=su
+ limama@gmail.com;X-NUM-GUESTS=0:mailto:sulimama@gmail.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<i>Extending this indefinitely since we're all still into it!</
+ i><br><b><br></b><br><b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a 
+ href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday
+ +Cohort+Meeting&iso=20240922T12&p1=202&ah=2" target="_blank">see this in yo
+ ur time zone</a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timea
+ nddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=2
+ 0240919T13&p1=202&ah=2" target="_blank">see this in your time zone</a>)</li
+ ></ul><br>The zoom link is the same every time. Just click » <a href="https
+ ://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" targ
+ et="_blank"><b>Start Cohort Meeting</b></a><br><br>You can forward this to 
+ others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" target="
+ _blank">maya@bairey.com</a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Fall 2024 Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241210T010000Z
+DTEND:20241210T030000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:23enrjjvpqrqg2238qc1ka4vv9@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ly
+ nnahaller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CREATED:20241209T210311Z
+DESCRIPTION:<br>Zoom link: <a href="https://us06web.zoom.us/j/9927228163?pw
+ d=VDNaOW8wMFZpcWh0UnlVWFB1NTZIZz09"><u>https://us06web.zoom.us/j/9927228163
+ ?pwd=VDNaOW8wMFZpcWh0UnlVWFB1NTZIZz09</u></a><br><br>5pm pacific<br>8pm eas
+ tern<br>midnight greenwich
+LAST-MODIFIED:20241209T213202Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Enchanted watch party
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240206
+DTEND;VALUE=DATE:20240207
+DTSTAMP:20260228T002011Z
+UID:CSVConvert914e7445b8dd1bcc15b8b17404b8c62e
+CREATED:19000101T120000Z
+DESCRIPTION:Insert a lead magnet into the book\, both at the front and back
+ \, and connect it to website subscription page.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Insert Lead Magnet
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20230522T180000
+DTEND;TZID=America/Los_Angeles:20230522T190000
+RRULE:FREQ=WEEKLY;UNTIL=20230619T065959Z;BYDAY=MO
+EXDATE;TZID=America/Los_Angeles:20230529T180000
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=markwilliamdavis@gmail.com:mailto:markwilliamdavis@gmail.com
+UID:6c42ecb70o4tqtqam80j0di6jc_R20230523T010000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=steffn
+ ee.peterman@gmail.com;X-NUM-GUESTS=0:mailto:steffnee.peterman@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=markwi
+ lliamdavis@gmail.com;X-NUM-GUESTS=0:mailto:markwilliamdavis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ hngorhamrueter@gmail.com;X-NUM-GUESTS=0:mailto:johngorhamrueter@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rian.lindner@gmail.com;X-NUM-GUESTS=0:mailto:marian.lindner@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=kenned
+ y.eileen7@gmail.com;X-NUM-GUESTS=0:mailto:kennedy.eileen7@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=br
+ andon_kimberling@yahoo.com;X-NUM-GUESTS=0:mailto:brandon_kimberling@yahoo.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bo
+ b@robertgallup.com;X-NUM-GUESTS=0:mailto:bob@robertgallup.com
+CREATED:20230221T030452Z
+DESCRIPTION:Mark Davis is inviting you to a scheduled Zoom meeting.\n\nJoin
+  Zoom Meeting\nhttps://us02web.zoom.us/j/88272505951?pwd=Q293NS9LcURSb1cvNE
+ c3d0YwTEN6UT09\n\nMeeting ID: 882 7250 5951\nPasscode: 870145\nOne tap mobi
+ le\n+17193594580\,\,88272505951#\,\,\,\,*870145# US\n+12532050468\,\,882725
+ 05951#\,\,\,\,*870145# US\n\nDial by your location\n        +1 719 359 4580
+  US\n        +1 253 205 0468 US\n        +1 253 215 8782 US (Tacoma)\n     
+    +1 346 248 7799 US (Houston)\n        +1 669 444 9171 US\n        +1 669
+  900 6833 US (San Jose)\n        +1 646 931 3860 US\n        +1 689 278 100
+ 0 US\n        +1 929 205 6099 US (New York)\n        +1 301 715 8592 US (Wa
+ shington DC)\n        +1 305 224 1968 US\n        +1 309 205 3325 US\n     
+    +1 312 626 6799 US (Chicago)\n        +1 360 209 5623 US\n        +1 386
+  347 5053 US\n        +1 507 473 4847 US\n        +1 564 217 2000 US\nMeeti
+ ng ID: 882 7250 5951\nPasscode: 870145\nFind your local number: https://us0
+ 2web.zoom.us/u/k25nZJ2Q9\n\n
+LAST-MODIFIED:20230618T195807Z
+LOCATION:https://us02web.zoom.us/j/88272505951?pwd=Q293NS9LcURSb1cvNEc3d0Yw
+ TEN6UT09
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Willlamette Writers Critique Group: Winter Mist
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250824T120000
+DTEND;TZID=America/Los_Angeles:20250824T140000
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250629T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bb
+ uckman@outlook.com;X-NUM-GUESTS=0:mailto:bbuckman@outlook.com
+RECURRENCE-ID;TZID=America/Los_Angeles:20250824T120000
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<i>Updated to add the critique schedule below!</i><b><br><br>Me
+ eting Cadence</b><ul><li>Sundays at Noon PDT (<a href="https://www.timeandd
+ ate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+Meeting&iso=202409
+ 22T12&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>)</
+ li><li>Thursdays at 1 PM PDT (<a href="https://www.timeanddate.com/worldclo
+ ck/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=20240919T13&p1=202&a
+ h=2" target="_blank"><u>see this in your time zone</u></a>)</li></ul>The zo
+ om link is the same every time. Just click » <a href="https://us06web.zoom.
+ us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blank"><u><
+ b>Start Cohort Meeting</b></u></a><br><br>What do we do?<br><ul><li><b>10 m
+ inutes:</b> each say what we intend to work on</li><li><b>50 minutes:</b> c
+ ameras and mics off\, we write</li><li><b>10 minutes:</b> each say how it w
+ ent and what we're doing next</li><li><b>50 minutes:</b> cameras and mics o
+ ff\, we write</li><li><b>5 minutes:</b> quick check in and end the meeting<
+ /li></ul><br>Sundays only: After the meeting\, if you can stay\, we <span>c
+ ritique the work of whomever is scheduled.</span><br><span> </span><br><spa
+ n><b>CRITIQUE SCHEDULE</b><i> (will be updated weekly and sent to your inbo
+ x)</i></span><ul><li>Lynn – August 31</li><li>Maura – September 7</li><li>M
+ aya – September 14</li><li>Brandi – September 21</li><li>Devon – September 
+ 28</li><li>Iris – October 5</li><li>Julie – October 12</li><li>Kay – Octobe
+ r 19<br></li></ul><br>If you don't have work to be critiqued\, we'll skip y
+ ou until you do. If you can't stay late on Sunday\, an emailed critique to 
+ the author is suggested but not required.<br> <br>We don't take attendance 
+ – come as you can\, when you can. <br><br>Questions? <a href="mailto:maya@b
+ airey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240201
+DTEND;VALUE=DATE:20240202
+DTSTAMP:20260228T002011Z
+UID:CSVConvert890f8f9d366daa2e10d2260a15d49aca
+CREATED:19000101T120000Z
+DESCRIPTION:Post link to blog post on Twitter\, Facebook\, TikTok\, Instagr
+ am
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Post to Socials
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241110T120000
+DTEND;TZID=America/Los_Angeles:20241110T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250330T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<i>Extending this indefinitely since we're all still into it!</
+ i> <br><br><b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="http
+ s://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+Me
+ eting&iso=20240922T12&p1=202&ah=2" target="_blank"><u>see this in your time
+  zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeandd
+ ate.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=2024
+ 0919T13&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>)
+ </li></ul>The zoom link is the same every time. Just click » <a href="https
+ ://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" targ
+ et="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>You can forward t
+ his to others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" t
+ arget="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Fall 2024 Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241227T080000
+DTEND;TZID=America/Los_Angeles:20241227T170000
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=4;BYDAY=FR,MO,TU,TH
+EXDATE;TZID=America/Los_Angeles:20250102T080000
+DTSTAMP:20260228T002011Z
+UID:0fkh38mdc0krtqaace7torg3r9@google.com
+CREATED:20241226T213412Z
+LAST-MODIFIED:20250102T180802Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240205
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvertce77bdc71984cd96f726a3751a523763
+CREATED:19000101T120000Z
+DESCRIPTION:Explore book promotion companies for assistance with pre-releas
+ e and launch.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Research Options for Help
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250528T180000Z
+DTEND:20250528T191500Z
+DTSTAMP:20260228T002011Z
+UID:270hj3g4g306298m79ek20hd7r@google.com
+CREATED:20250526T195537Z
+DESCRIPTION:<b>Your Unique Join Link:</b> <a href="https://event.demio.com/
+ session/h3eMUiP5R4KT6owW" target="_blank">https://event.demio.com/session/h
+ 3eMUiP5R4KT6owW</a><br /><br /><i>This link is unique to you and should not
+  be shared.</i><br /><br />Have questions about this event? Email <a href="
+ mailto:dave@kindlepreneur.com">dave@kindlepreneur.com</a><br /><br /><a hre
+ f="https://my.demio.com/manage-registration/h3eMUiP5R4KT6owW" target="_blan
+ k">Manage registration and notifications</a><br /><br />
+LAST-MODIFIED:20250526T195537Z
+LOCATION:https://event.demio.com/session/h3eMUiP5R4KT6owW
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:KDP Webinar
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20230907T120000
+DTEND;TZID=America/Los_Angeles:20230907T130000
+RRULE:FREQ=WEEKLY;UNTIL=20231207T075959Z;BYDAY=TH
+EXDATE;TZID=America/Los_Angeles:20231109T120000
+DTSTAMP:20260228T002011Z
+UID:4ns58t79rfrv1p8lbqpjk0pojc@google.com
+CREATED:20230902T025250Z
+DESCRIPTION:<strong>Looking for writers in all the wrong places? Maybe you 
+ need The <em>Write</em> Place.</strong>Join us at <strong>The Write Place</
+ strong> each week\, online. Discuss goal setting and productivity while enc
+ ouraging\, supporting\, and connecting with other writers. We will share ou
+ r rejections\, sales\, and other market news so that we can inspire and lea
+ rn from each other.<strong>How to join us</strong>Here is the Zoom link to 
+ register for the online meeting: <a href="https://us02web.zoom.us/meeting/r
+ egister/tZcqf--sqz0sHdI396Y97lDuIqCmAjYqbE1T">https://us02web.zoom.us/meeti
+ ng/register/tZcqf--sqz0sHdI396Y97lDuIqCmAjYqbE1T</a>Please sign up for our 
+ email newsletter <strong><a href="http://eepurl.com/hNM2HD">here</a></stron
+ g> to receive email reminders.<strong>About Our Online Meetings</st (View F
+ ull event Description Here: https://willamettewriters.org/event/online-the-
+ write-place-productivity-and-goal-setting-2/)
+LAST-MODIFIED:20231202T185850Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Group
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20231218
+DTEND;VALUE=DATE:20231219
+DTSTAMP:20260228T002011Z
+UID:06m5dk92c27cmulciurmgoona0@google.com
+CREATED:20231209T195309Z
+LAST-MODIFIED:20231209T195311Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Amazon ($1\,459)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241117T212000Z
+DTEND:20241118T071500Z
+DTSTAMP:20260228T002011Z
+UID:3821ulk193qi4ovbh1jtuu9hsf@google.com
+CREATED:20241108T190715Z
+LAST-MODIFIED:20241108T191038Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Flight to PA (UA 2382/4267)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230214T030000Z
+DTEND:20230214T050000Z
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:3i7qjebn4s0m36p56luv22iq5b@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=be
+ cker356@mac.com;X-NUM-GUESTS=0:mailto:becker356@mac.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=do
+ bieresq@gmail.com;X-NUM-GUESTS=0:mailto:dobieresq@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=go
+ ldnbee@gmail.com;X-NUM-GUESTS=0:mailto:goldnbee@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CREATED:20221202T061529Z
+DESCRIPTION:Monday Critique Group meeting (moving to Tuesday after this inv
+ ite)<br><br><a href="https://us06web.zoom.us/j/85202874742?pwd=bWlsTTRYV1px
+ SFduMmdmOTZTWnZ5QT09"><u><b>https://us06web.zoom.us/j/85202874742?pwd=bWlsT
+ TRYV1pxSFduMmdmOTZTWnZ5QT09</b></u></a><br><br>Passcode (if needed): readme
+LAST-MODIFIED:20230209T182905Z
+LOCATION:Zoom
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Monday Critique Group
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250327T130000
+DTEND;TZID=America/Los_Angeles:20250327T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250403T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250327T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=su
+ limama@gmail.com;X-NUM-GUESTS=0:mailto:sulimama@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=da
+ nielamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.c
+ om
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank">see this in your time z
+ one</a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeanddate.co
+ m/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=20240919T1
+ 3&p1=202&ah=2" target="_blank">see this in your time zone</a>)</li></ul><br
+ >The zoom link is the same every time. Just click » <a href="https://us06we
+ b.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blan
+ k"><b>Start Cohort Meeting</b></a><br><br>What do we do?<br><ul><li><b>10 m
+ inutes:</b> each say what we intend to work on</li><li><b>50 minutes:</b> c
+ ameras and mics off\, we write</li><li><b>10 minutes:</b> each say how it w
+ ent and what we're doing next</li><li><b>50 minutes:</b> cameras and mics o
+ ff\, we write</li><li><b>5 minutes:</b> quick check in and end the meeting<
+ /li></ul>Sundays only:<br><ul><li><b>The last 20 minutes:</b> critiquing th
+ e work of whomever is scheduled </li><li><b>After the meeting:</b> 30 minut
+ es of discussion of a book we're reading <i>(optional)</i></li></ul>We don'
+ t take attendance – come as you can\, when you can. <br><br>You can invite 
+ others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" target="
+ _blank">maya@bairey.com</a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241114T180000
+DTEND;TZID=America/Los_Angeles:20241114T180000
+RRULE:FREQ=DAILY;UNTIL=20241117T075959Z
+DTSTAMP:20260228T002011Z
+UID:1j58cl196jdc00ou712jroqorc@google.com
+CREATED:20241108T181638Z
+LAST-MODIFIED:20241108T190812Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Eat Dinner Before This
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250403T130000
+DTEND;TZID=America/Los_Angeles:20250403T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250626T065959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250403T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=su
+ limama@gmail.com;X-NUM-GUESTS=0:mailto:sulimama@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=da
+ nielamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank">see this in your time z
+ one</a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeanddate.co
+ m/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=20240919T1
+ 3&p1=202&ah=2" target="_blank">see this in your time zone</a>)</li></ul><br
+ >The zoom link is the same every time. Just click » <a href="https://us06we
+ b.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blan
+ k"><b>Start Cohort Meeting</b></a><br><br>What do we do?<br><ul><li><b>10 m
+ inutes:</b> each say what we intend to work on</li><li><b>50 minutes:</b> c
+ ameras and mics off\, we write</li><li><b>10 minutes:</b> each say how it w
+ ent and what we're doing next</li><li><b>50 minutes:</b> cameras and mics o
+ ff\, we write</li><li><b>5 minutes:</b> quick check in and end the meeting<
+ /li></ul>Sundays only:<br><ul><li><b>The last 20 minutes:</b> critiquing th
+ e work of whomever is scheduled </li><li><b>After the meeting:</b> 30 minut
+ es of discussion of a book we're reading <i>(optional)</i></li></ul>We don'
+ t take attendance – come as you can\, when you can. <br><br>You can invite 
+ others at will.<br><br>Questions? <a href="mailto:maya@bairey.com" target="
+ _blank">maya@bairey.com</a>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240129
+DTEND;VALUE=DATE:20240130
+DTSTAMP:20260228T002011Z
+UID:CSVConvert7debe90bd2c1c0b51813e6f2029312fe
+CREATED:19000101T120000Z
+DESCRIPTION:Make a regular blog post.
+LAST-MODIFIED:20240129T165349Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:✔️ Write and Publish Blog Post
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250309T013000Z
+DTSTAMP:20260228T002011Z
+UID:2q5npv2g0r0p079n7eqop17moh@google.com
+CREATED:20250211T001235Z
+DESCRIPTION:<a href="https://docs.google.com/spreadsheets/d/1XbX8y1sc8zSfnb
+ tg5ARzWnNobUFT_btM1UxVV5JhzSk/edit?fbclid=IwY2xjawIXdF5leHRuA2FlbQIxMQABHWP
+ fsXyVO6YmmraZmlPzJG6W0GUJUzMaA8tDrHuPhHyIYuVUUDeC5Q2yXw_aem_CffIjCSfuv-ks5R
+ _-1d47A&amp\;pli=1&amp\;gid=1440369877#gid=1440369877" class="pastedDriveLi
+ nk-0">https://docs.google.com/spreadsheets/d/1XbX8y1sc8zSfnbtg5ARzWnNobUFT_
+ btM1UxVV5JhzSk/edit?fbclid=IwY2xjawIXdF5leHRuA2FlbQIxMQABHWPfsXyVO6YmmraZml
+ PzJG6W0GUJUzMaA8tDrHuPhHyIYuVUUDeC5Q2yXw_aem_CffIjCSfuv-ks5R_-1d47A&amp\;pl
+ i=1&amp\;gid=1440369877#gid=1440369877</a>
+LAST-MODIFIED:20250301T183103Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Kindle Sale Post
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20230227T180000
+DTEND;TZID=America/Los_Angeles:20230227T190000
+RRULE:FREQ=WEEKLY;UNTIL=20230522T065959Z;BYDAY=MO
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=markwilliamdavis@gmail.com:mailto:markwilliamdavis@gmail.com
+UID:6c42ecb70o4tqtqam80j0di6jc@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=steffn
+ ee.peterman@gmail.com;X-NUM-GUESTS=0:mailto:steffnee.peterman@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=markwi
+ lliamdavis@gmail.com;X-NUM-GUESTS=0:mailto:markwilliamdavis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ hngorhamrueter@gmail.com;X-NUM-GUESTS=0:mailto:johngorhamrueter@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rian.lindner@gmail.com;X-NUM-GUESTS=0:mailto:marian.lindner@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=kenned
+ y.eileen7@gmail.com;X-NUM-GUESTS=0:mailto:kennedy.eileen7@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=br
+ andon_kimberling@yahoo.com;X-NUM-GUESTS=0:mailto:brandon_kimberling@yahoo.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bo
+ b@robertgallup.com;X-NUM-GUESTS=0:mailto:bob@robertgallup.com
+CREATED:20230221T030452Z
+DESCRIPTION:Mark Davis is inviting you to a scheduled Zoom meeting.\n\nJoin
+  Zoom Meeting\nhttps://us02web.zoom.us/j/88272505951?pwd=Q293NS9LcURSb1cvNE
+ c3d0YwTEN6UT09\n\nMeeting ID: 882 7250 5951\nPasscode: 870145\nOne tap mobi
+ le\n+17193594580\,\,88272505951#\,\,\,\,*870145# US\n+12532050468\,\,882725
+ 05951#\,\,\,\,*870145# US\n\nDial by your location\n        +1 719 359 4580
+  US\n        +1 253 205 0468 US\n        +1 253 215 8782 US (Tacoma)\n     
+    +1 346 248 7799 US (Houston)\n        +1 669 444 9171 US\n        +1 669
+  900 6833 US (San Jose)\n        +1 646 931 3860 US\n        +1 689 278 100
+ 0 US\n        +1 929 205 6099 US (New York)\n        +1 301 715 8592 US (Wa
+ shington DC)\n        +1 305 224 1968 US\n        +1 309 205 3325 US\n     
+    +1 312 626 6799 US (Chicago)\n        +1 360 209 5623 US\n        +1 386
+  347 5053 US\n        +1 507 473 4847 US\n        +1 564 217 2000 US\nMeeti
+ ng ID: 882 7250 5951\nPasscode: 870145\nFind your local number: https://us0
+ 2web.zoom.us/u/k25nZJ2Q9\n\n
+LAST-MODIFIED:20230523T005034Z
+LOCATION:https://us02web.zoom.us/j/88272505951?pwd=Q293NS9LcURSb1cvNEc3d0Yw
+ TEN6UT09
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Willlamette Writers Critique Group: Winter Mist
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250101T030000Z
+DTEND:20250101T090000Z
+DTSTAMP:20260228T002011Z
+UID:6t8jtsuk821isnkc71gbokrc1m@google.com
+CREATED:20241226T213726Z
+LAST-MODIFIED:20241226T213907Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:NYE!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20241114T230000
+DTEND;TZID=America/Los_Angeles:20241114T230000
+RRULE:FREQ=DAILY;UNTIL=20241117T075959Z
+DTSTAMP:20260228T002011Z
+UID:65oo2cg5fs46bj96uhb327tdg2@google.com
+CREATED:20241108T181847Z
+LAST-MODIFIED:20241108T190756Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Jodi's Bro
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250828T130000
+DTEND;TZID=America/Los_Angeles:20250828T150000
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:mqgc29ptaavnig0ns36s3b407v_R20250626T200000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bbuckm
+ an@outlook.com;X-NUM-GUESTS=0:mailto:bbuckman@outlook.com
+RECURRENCE-ID;TZID=America/Los_Angeles:20250828T130000
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<span><i>Updated to add the critique schedule below!</i><b><br>
+ <br>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="https://www.ti
+ meanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+Meeting&iso=
+ 20240922T12&p1=202&ah=2" target="_blank"><u>see this in your time zone</u><
+ /a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeanddate.com/wo
+ rldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=20240919T13&p1
+ =202&ah=2" target="_blank"><u>see this in your time zone</u></a>)</li></ul>
+ The zoom link is the same every time. Just click » <a href="https://us06web
+ .zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" target="_blank
+ "><u><b>Start Cohort Meeting</b></u></a><br><br>What do we do?<br><ul><li><
+ b>10 minutes:</b> each say what we intend to work on</li><li><b>50 minutes:
+ </b> cameras and mics off\, we write</li><li><b>10 minutes:</b> each say ho
+ w it went and what we're doing next</li><li><b>50 minutes:</b> cameras and 
+ mics off\, we write</li><li><b>5 minutes:</b> quick check in and end the me
+ eting</li></ul><br>Sundays only: After the meeting\, if you can stay\, we <
+ span>critique the work of whomever is scheduled.</span><br><span> </span><b
+ r><span><b>CRITIQUE SCHEDULE</b><i> (will be updated weekly and sent to you
+ r inbox)</i></span><ul><li>Lynn – August 31</li><li>Maura – September 7</li
+ ><li>Maya – September 14</li><li>Brandi – September 21</li><li>Devon – Sept
+ ember 28</li><li>Iris – October 5</li><li>Julie – October 12</li><li>Kay – 
+ October 19<br></li></ul><br>If you don't have work to be critiqued\, we'll 
+ skip you until you do. If you can't stay late on Sunday\, an emailed critiq
+ ue to the author is suggested but not required.<br> <br>We don't take atten
+ dance – come as you can\, when you can. <br><br>Questions? <a href="mailto:
+ maya@bairey.com" target="_blank"><u>maya@bairey.com</u></a></span>
+LAST-MODIFIED:20251002T192258Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250101T000000Z
+DTEND:20250101T030000Z
+DTSTAMP:20260228T002011Z
+UID:4olf4t7jr4dk2u6ffbh37pkvrf@google.com
+CREATED:20241227T185502Z
+LAST-MODIFIED:20241227T185502Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Makeup
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241015T010000Z
+DTEND:20241015T020000Z
+DTSTAMP:20260228T002011Z
+UID:um0kdmc3v5vku5isur3flmkt4c@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CREATED:20241014T231544Z
+DESCRIPTION:NOM NOM Restaurant & Grill\n801 C St\, Vancouver\, WA 98660\n+1
+  360-718-7360
+LAST-MODIFIED:20241014T231544Z
+LOCATION:NOM NOM Restaurant & Grill\, 801 C St\, Vancouver\, WA 98660
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Reservation at NOM NOM Restaurant & Grill
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241117T003000Z
+DTEND:20241117T013000Z
+DTSTAMP:20260228T002011Z
+UID:5i0sfnnfvr324vk4qmi65cukac@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+CREATED:20241108T194635Z
+DESCRIPTION:Fogo de Chao - Las Vegas\n360 E. Flamingo Rd\, Las Vegas\, NV 8
+ 9169\n+1 702-431-4500
+LAST-MODIFIED:20241115T175913Z
+LOCATION:Fogo de Chao - Las Vegas\, 360 E. Flamingo Rd\, Las Vegas\, NV 891
+ 69
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Reservation at Fogo de Chao - Las Vegas
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250119T230000Z
+DTEND:20250120T000000Z
+DTSTAMP:20260228T002011Z
+UID:7e2hki86cos17ef3n18uvc2i1s@google.com
+CREATED:20250110T214534Z
+DESCRIPTION:Join Zoom Meeting\nhttps://us06web.zoom.us/j/81499256393?pwd=7W
+ KEFAzPO9YKsZOZLbPHMAJzzOnAwo.1\n\nMeeting ID: 814 9925 6393\nPasscode: 2868
+ 79
+LAST-MODIFIED:20250110T214648Z
+LOCATION:Zoom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Website Discussion
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20240919T130000
+DTEND;TZID=America/Los_Angeles:20240919T150000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241107T075959Z;BYDAY=TH
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:2mpanu61pjkn4gfauepfgamqpj@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=Steph 
+ Bairey;X-NUM-GUESTS=0:mailto:stephbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=ayamew
+ rites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ho
+ wardwho@gmail.com;X-NUM-GUESTS=0:mailto:howardwho@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jk
+ hamilton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cc
+ naden@yahoo.com;X-NUM-GUESTS=0:mailto:ccnaden@yahoo.com
+CLASS:PUBLIC
+CREATED:20240916T151434Z
+DESCRIPTION:<b>Meeting Cadence</b><br><ul><li>Sundays at Noon PDT (<a href=
+ "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Coho
+ rt+Meeting&amp\;iso=20240922T12&amp\;p1=202&amp\;ah=2" target="_blank">see 
+ this in your time zone</a>)</li><li>Thursdays at 1 PM PDT (<a href="https:/
+ /www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Mee
+ ting&amp\;iso=20240919T13&amp\;p1=202&amp\;ah=2" target="_blank">see this i
+ n your time zone</a>)</li></ul><br><br>The zoom link is the same every time
+ . Just click » <a href="https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b
+ 2gtUAzlz0mbAfdXvG3W0W.1" target="_blank"><b>Start Cohort Meeting</b></a><br
+ ><br>You can forward this to others at will.<br><br>Questions? <a href="mai
+ lto:maya@bairey.com">maya@bairey.com</a>
+LAST-MODIFIED:20241121T193552Z
+LOCATION:Zoom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Fall 2024 Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240204
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert08fb503cebdecea6ffb5ebc253131488
+CREATED:19000101T120000Z
+DESCRIPTION:Create promotions to give out advance copies of the book in exc
+ hange for an honest review on Amazon.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Advance Copies
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240204
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert124c4fcf55865e37b571781f55decd2d
+CREATED:19000101T120000Z
+DESCRIPTION:Identify and apply for relevant book awards\, adhering to submi
+ ssion deadlines.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Apply to Book Awards
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240130
+DTEND;VALUE=DATE:20240131
+DTSTAMP:20260228T002011Z
+UID:CSVConvertc98e4d09fcbd95891eb374113ec2e869
+CREATED:19000101T120000Z
+DESCRIPTION:Send digest email to newsletter list.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Send Newsletter Blast
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240127
+DTEND;VALUE=DATE:20240129
+DTSTAMP:20260228T002011Z
+UID:CSVConvert335c49c901a428f5d758559871def718
+CREATED:19000101T120000Z
+DESCRIPTION:Make a regular blog post.
+LAST-MODIFIED:20240128T075008Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Write and Publish Blog Post
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250330T120000
+DTEND;TZID=America/Los_Angeles:20250330T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250406T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250330T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mj
+ bairey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (<a href="htt
+ ps://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sunday+Cohort+M
+ eeting&iso=20240922T12&p1=202&ah=2" target="_blank"><u>see this in your tim
+ e zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https://www.timeand
+ date.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Meeting&iso=202
+ 40919T13&p1=202&ah=2" target="_blank"><u>see this in your time zone</u></a>
+ )</li></ul><br>The zoom link is the same every time. Just click » <a href="
+ https://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1"
+  target="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do we d
+ o?<br><ul><li><b>10 minutes:</b> each say what we intend to work on</li><li
+ ><b>50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minutes:<
+ /b> each say how it went and what we're doing next</li><li><b>50 minutes:</
+ b> cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check in
+  and end the meeting</li></ul>Sundays only:<br><ul><li><b>The last 20 minut
+ es:</b> critiquing the work of whomever is scheduled </li><li><b>After the 
+ meeting:</b> 30 minutes of discussion of a book we're reading <i>(optional)
+ </i></li></ul>We don't take attendance – come as you can\, when you can. <b
+ r><br>You can invite others at will.<br><br>Questions? <a href="mailto:maya
+ @bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241228T200000Z
+DTEND:20241229T040000Z
+DTSTAMP:20260228T002011Z
+UID:7nq4nj72etn795dsbp300ffd12@google.com
+CREATED:20241226T213543Z
+LAST-MODIFIED:20241226T213826Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Hang @ Maya's
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251017T200000Z
+DTEND:20251017T220000Z
+DTSTAMP:20260228T002011Z
+UID:6oo38db46sqm4b9k6kojcb9k6cr62bb168o3ebb46go66opg60pjgdb5c4@google.com
+CREATED:20250930T234931Z
+LAST-MODIFIED:20251015T175506Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Tattoo fix
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241116T030000Z
+DTEND:20241116T060000Z
+DTSTAMP:20260228T002011Z
+UID:6s8m483dkjjp3erda1evl8hmu6@google.com
+CREATED:20241108T180916Z
+LAST-MODIFIED:20241108T190828Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Lynn @ Adele
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240201
+DTEND;VALUE=DATE:20240202
+DTSTAMP:20260228T002011Z
+UID:CSVConvertb9013cf942d535bccf0db43c609c7625
+CREATED:19000101T120000Z
+DESCRIPTION:Make a regular blog post.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Write and Publish Blog Post
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240205
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvertfb971bae0e1fee2e5508ed23d77e2264
+CREATED:19000101T120000Z
+DESCRIPTION:Promote newsletter sign-up on website and social media.
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Promote Newsletter Sign Ups
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20250921T120000
+DTEND;TZID=America/Los_Angeles:20250921T140000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250928T065959Z;BYDAY=SU
+DTSTAMP:20260228T002011Z
+ORGANIZER;CN=mjbairey@gmail.com:mailto:mjbairey@gmail.com
+UID:j0psde69mg7b2amfsfqr0jmci3_R20250921T190000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ay
+ amewrites@gmail.com;X-NUM-GUESTS=0:mailto:ayamewrites@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkhami
+ lton11@gmail.com;X-NUM-GUESTS=0:mailto:jkhamilton11@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ka
+ ydelay2001@gmail.com;X-NUM-GUESTS=0:mailto:kaydelay2001@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lynnah
+ aller@gmail.com;X-NUM-GUESTS=0:mailto:lynnahaller@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mjbair
+ ey@gmail.com;X-NUM-GUESTS=0:mailto:mjbairey@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=danie
+ lamorescalchi@gmail.com;X-NUM-GUESTS=0:mailto:danielamorescalchi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=maurad
+ 7@msn.com;X-NUM-GUESTS=0:mailto:maurad7@msn.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=devone
+ rvin2010@gmail.com;X-NUM-GUESTS=0:mailto:devonervin2010@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bbuckm
+ an@outlook.com;X-NUM-GUESTS=0:mailto:bbuckman@outlook.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jill@l
+ egendarykeynotes.com;X-NUM-GUESTS=0:mailto:jill@legendarykeynotes.com
+CLASS:PUBLIC
+CREATED:20240909T221220Z
+DESCRIPTION:<i>9/21: updated critique schedule</i><br><br><b>Purpose: </b>W
+ e meet to keep our creative projects moving forward\, and to share our supp
+ ort with other writers of all experience levels. <i>Your writing deserves s
+ pace.</i><br><b></b><br><b>Meeting Cadence</b><ul><li>Sundays at Noon PDT (
+ <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Sun
+ day+Cohort+Meeting&iso=20250914T12&p1=202&ah=2" target="_blank"><u>see this
+  in your time zone</u></a>)</li><li>Thursdays at 1 PM PDT (<a href="https:/
+ /www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Thursday+Cohort+Mee
+ ting&iso=20250918T13&p1=202&ah=2" target="_blank"><u>see this in your time 
+ zone</u></a>)</li></ul>The zoom link is the same every time. » <a href="htt
+ ps://us06web.zoom.us/j/84177304444?pwd=yFEYVsw7b2gtUAzlz0mbAfdXvG3W0W.1" ta
+ rget="_blank"><u><b>Start Cohort Meeting</b></u></a><br><br>What do we do?<
+ br><ul><li><b>10 minutes:</b> each say what we intend to work on</li><li><b
+ >50 minutes:</b> cameras and mics off\, we write</li><li><b>10 minutes:</b>
+  each say how it went and what we're doing next</li><li><b>50 minutes:</b> 
+ cameras and mics off\, we write</li><li><b>5 minutes:</b> quick check in an
+ d end the meeting</li></ul>Sundays only: After the meeting\, if you can sta
+ y\, we critique the work of whomever is scheduled.<br> <br><b>CRITIQUE SCHE
+ DULE</b><i> (updated when needed)</i><ul><li>Devon – September 28</li><li>I
+ ris – October 5</li><li>Julie – October 12</li><li>Kay – October 19</li><li
+ >Lynn – October 26</li><li>Maura – November 2</li><li>Maya – November 9</li
+ ><li>Brandi – November 16 </li></ul>If you don't have work to be critiqued\
+ , we'll skip you until you do. If you can't stay late on Sunday\, an emaile
+ d critique to the author is suggested but not required.<br> <br>We don't ta
+ ke attendance – <b>come as you can\, when you can. </b><br><br>Questions? <
+ a href="mailto:maya@bairey.com" target="_blank"><u>maya@bairey.com</u></a>
+LAST-MODIFIED:20251002T190510Z
+LOCATION:Zoom
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Writing Cohort
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240203
+DTEND;VALUE=DATE:20240206
+DTSTAMP:20260228T002011Z
+UID:CSVConvert20f48d22ff3f15922670a9b7efc1add5
+CREATED:19000101T120000Z
+DESCRIPTION:Plan for events with different formats (in-person\, virtual\, i
+ nterviews).
+LAST-MODIFIED:20240128T184808Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Consider Events
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241229T203000Z
+DTEND:20241229T233000Z
+DTSTAMP:20260228T002011Z
+UID:5qtm8rb5a43jrgfq0k1sq204iu@google.com
+CREATED:20241226T213611Z
+LAST-MODIFIED:20241227T185331Z
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Mani Pedis
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

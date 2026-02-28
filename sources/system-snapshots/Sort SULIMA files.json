@@ -1,0 +1,228 @@
+{
+  "name": "Sort SULIMA files",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const CLIENT_TAG = \"Sulima\";\n\nconst MATRIX = {\n  \"All-in-the-Soup|All-in-the-Soup\": \"1wXYsN253TZTVcBPueU0Ayy595L3WR3SH\",\n  \"All-in-the-Soup|Arms-Filled-with-Bittersweet\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"All-in-the-Soup|Tributaries\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"All-in-the-Soup|Words-That-Dance\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"All-in-the-Soup|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"All-in-the-Soup|Asset\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"All-in-the-Soup|Copy\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"All-in-the-Soup|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"All-in-the-Soup|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"All-in-the-Soup|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"All-in-the-Soup|Inspo\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Admin|All-in-the-Soup\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"All-in-the-Soup|Cover\": \"1wXYsN253TZTVcBPueU0Ayy595L3WR3SH\",\n  \"All-in-the-Soup|Info\": \"1wXYsN253TZTVcBPueU0Ayy595L3WR3SH\",\n  \"All-in-the-Soup|Backup\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"All-in-the-Soup|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"All-in-the-Soup|Interior\": \"1wXYsN253TZTVcBPueU0Ayy595L3WR3SH\",\n  \"All-in-the-Soup|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"All-in-the-Soup|Video\": \"1wXYsN253TZTVcBPueU0Ayy595L3WR3SH\",\n  \"All-in-the-Soup|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"All-in-the-Soup|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"All-in-the-Soup|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Arms-Filled-with-Bittersweet|Arms-Filled-with-Bittersweet\": \"1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo\",\n  \"Arms-Filled-with-Bittersweet|Tributaries\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Arms-Filled-with-Bittersweet|Words-That-Dance\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Arms-Filled-with-Bittersweet|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Arms-Filled-with-Bittersweet|Asset\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Arms-Filled-with-Bittersweet|Copy\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Arms-Filled-with-Bittersweet|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Arms-Filled-with-Bittersweet|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Arms-Filled-with-Bittersweet|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Arms-Filled-with-Bittersweet|Inspo\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Admin|Arms-Filled-with-Bittersweet\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Arms-Filled-with-Bittersweet|Cover\": \"1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo\",\n  \"Arms-Filled-with-Bittersweet|Info\": \"1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo\",\n  \"Arms-Filled-with-Bittersweet|Backup\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Arms-Filled-with-Bittersweet|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Arms-Filled-with-Bittersweet|Interior\": \"1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo\",\n  \"Arms-Filled-with-Bittersweet|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Arms-Filled-with-Bittersweet|Video\": \"1z-sFkqO7SWcgnPRxaJAk1jziLahxBLWo\",\n  \"Arms-Filled-with-Bittersweet|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Arms-Filled-with-Bittersweet|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Arms-Filled-with-Bittersweet|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Tributaries|Tributaries\": \"1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1\",\n  \"Tributaries|Words-That-Dance\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Source|Tributaries\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Asset|Tributaries\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Copy|Tributaries\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Design|Tributaries\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Marketing|Tributaries\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Newsletter|Tributaries\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Inspo|Tributaries\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Admin|Tributaries\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Tributaries\": \"1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1\",\n  \"Info|Tributaries\": \"1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1\",\n  \"Backup|Tributaries\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Tributaries\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Interior|Tributaries\": \"1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1\",\n  \"OLD|Tributaries\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Tributaries|Video\": \"1yF_yKsQkQwSwIIPflP8B1nITKy_4MrH1\",\n  \"PSD|Tributaries\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Tributaries\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Social-image|Tributaries\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Words-That-Dance|Words-That-Dance\": \"1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC\",\n  \"Source|Words-That-Dance\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Asset|Words-That-Dance\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Copy|Words-That-Dance\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Design|Words-That-Dance\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Marketing|Words-That-Dance\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Newsletter|Words-That-Dance\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Inspo|Words-That-Dance\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Admin|Words-That-Dance\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Words-That-Dance\": \"1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC\",\n  \"Info|Words-That-Dance\": \"1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC\",\n  \"Backup|Words-That-Dance\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Words-That-Dance\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Interior|Words-That-Dance\": \"1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC\",\n  \"OLD|Words-That-Dance\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Video|Words-That-Dance\": \"1XVA06M6iqqw1tnHE74sTIg-4I-kQXmaC\",\n  \"PSD|Words-That-Dance\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Words-That-Dance\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Social-image|Words-That-Dance\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Source|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Asset|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Copy|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Design|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Marketing|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Newsletter|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Inspo|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Admin|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Cover|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Info|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Backup|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Headshot|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Interior|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"OLD|Source\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Source|Video\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"PSD|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Featured-image|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Social-image|Source\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Asset|Asset\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|Copy\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Asset|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Asset|Marketing\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|Newsletter\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|Inspo\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Admin|Asset\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Asset|Cover\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|Info\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|Backup\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Asset|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Asset|Interior\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Asset|Video\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Asset|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Asset|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Asset|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Copy|Copy\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Copy|Marketing\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|Newsletter\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|Inspo\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Admin|Copy\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Copy|Cover\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|Info\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Backup|Copy\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Copy|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Copy|Interior\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Copy|Video\": \"1jibhxXBXsZUgsTYiudGBCjD7cdAILiiA\",\n  \"Copy|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Copy|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Copy|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Design|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|Marketing\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|Newsletter\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|Inspo\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Admin|Design\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Design\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|Info\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Backup|Design\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Design|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Design|Interior\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Design|Video\": \"1Wxi1Qx2VmUJJRXaACsUpIwCwLL-MeLSh\",\n  \"Design|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Design|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Design|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Marketing|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Marketing|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Inspo|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Admin|Marketing\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Info|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Backup|Marketing\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Interior|Marketing\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Marketing|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Marketing|Video\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Marketing|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Marketing\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Marketing|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Newsletter|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Inspo|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Admin|Newsletter\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Info|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Backup|Newsletter\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Interior|Newsletter\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Newsletter|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Newsletter|Video\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Newsletter|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Newsletter\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Newsletter|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Inspo|Inspo\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"Admin|Inspo\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Cover|Inspo\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Info|Inspo\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Backup|Inspo\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Inspo\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Inspo|Interior\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Inspo|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Inspo|Video\": \"1oa1DjYEEwdm9wJQW8XDZUDk4jrqlG5QB\",\n  \"Inspo|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Inspo\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Inspo|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Admin|Admin\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|Cover\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|Info\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|Backup\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Admin|Headshot\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|Interior\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Admin|Video\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Admin|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Admin|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Admin|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Cover|Cover\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Cover|Info\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Backup|Cover\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Cover|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Cover|Interior\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Cover|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Cover|Video\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Cover|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Cover|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Cover|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Info|Info\": \"1Wwn62wgXvWL4xPfCsCRGLl2nGC6yMHnn\",\n  \"Backup|Info\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Info\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Info|Interior\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Info|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Info|Video\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Info|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Info\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Info|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Backup|Backup\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|Headshot\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|Interior\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|Video\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Backup|Featured-image\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Backup|Social-image\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Headshot\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Headshot|Interior\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Headshot|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Headshot|Video\": \"1D4BOx2y0gJ6IaGCUqBoJ6lOROpoXeUL7\",\n  \"Headshot|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Headshot\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Headshot|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"Interior|Interior\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Interior|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Interior|Video\": \"1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1\",\n  \"Interior|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Interior\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Interior|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"OLD|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"OLD|Video\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"OLD|PSD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Featured-image|OLD\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"OLD|Social-image\": \"1ASTrMyT8BoZ1R3JFTD4faPJqC2wAwo-Z\",\n  \"Video|Video\": \"17eP1Ps9zdVPnVgQdYS3YuaFMui4sbtPi\",\n  \"PSD|Video\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Video\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Social-image|Video\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\",\n  \"PSD|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|PSD\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"PSD|Social-image\": \"1D4VHUORJN08hK49qS1ZCEZ0CwV7aMR_h\",\n  \"Featured-image|Featured-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Featured-image|Social-image\": \"1ugMOJqdYEXN530v90JNVR1Jm4CtWtFz5\",\n  \"Social-image|Social-image\": \"1NT5GSrqVKJwtOsn6fTB5iZOyxdGqUWbh\"\n};\n\nconst items = $input.all();\n\nreturn items.map(item => {\n  const data = item.json;\n  const filename = data.name || \"\";\n  const result = { ...data, filename };\n\n  const match = filename.match(/\\[(.*?)\\]/);\n  if (!match) {\n    result.tagStatus = \"no-brackets\";\n    result.routingStatus = \"unsorted-no-brackets\";\n    return { json: result };\n  }\n\n  const raw = match[1].trim();\n  if (!raw) {\n    result.tagStatus = \"empty-brackets\";\n    result.routingStatus = \"unsorted-empty-brackets\";\n    return { json: result };\n  }\n\n  const tags = raw.split(/\\s+/);\n  const nonClientTags = tags.filter(\n    t => t.toLowerCase() !== CLIENT_TAG.toLowerCase()\n  );\n\n  result.rawTagString = raw;\n  result.tags = tags;\n  result.nonClientTags = nonClientTags;\n\n  if (nonClientTags.length === 0) {\n    result.tagStatus = \"no-nonclient-tags\";\n    result.routingStatus = \"unsorted-not-enough-tags\";\n    return { json: result };\n  }\n\n  let key;\n  let targetFolderId;\n\n  if (nonClientTags.length === 1) {\n    const tag = nonClientTags[0];\n    key = `${tag}|${tag}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  } else {\n    const tagA = nonClientTags[0];\n    const tagB = nonClientTags[1];\n    const sortedPair = [tagA, tagB].sort();\n    key = `${sortedPair[0]}|${sortedPair[1]}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  }\n\n  if (!targetFolderId) {\n    result.tagStatus = \"no-matrix-match\";\n    result.routingStatus = \"unsorted-no-matrix-match\";\n    return { json: result };\n  }\n\n  result.tagStatus = \"ok\";\n  result.routingStatus = \"ok\";\n  result.targetFolderId = targetFolderId;\n\n  return { json: result };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -576,
+        -240
+      ],
+      "id": "1b24ea7f-e141-4f7d-8cb1-7f4840781f29",
+      "name": "Parse tags"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7eb76f4d-a7a5-4452-aa9b-fb76656abbb8",
+              "leftValue": "={{ $json.routingStatus }}",
+              "rightValue": "ok",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -368,
+        -240
+      ],
+      "id": "5e5d1487-11c2-44aa-87d9-4513e816d286",
+      "name": "If routing okay"
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "={{$json[\"targetFolderId\"]}}",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -288
+      ],
+      "id": "f846d353-3250-4459-bfe0-420445da1e97",
+      "name": "Move to target",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1R0aAzfFYL8pB08eBBG09IYcExjLDE6S1",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -128
+      ],
+      "id": "e31e373e-126a-44d6-8851-d25cb87a387b",
+      "name": "Move to unsorted",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -960,
+        -240
+      ],
+      "id": "a77a387f-5a8b-4781-a8cc-e56adcc444e7",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "'18fqDFp35Upth9zKnrzgDAWGWfmTjLJJ_' in parents and trashed = false and mimeType != 'application/vnd.google-apps.folder'",
+        "returnAll": true,
+        "filter": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -768,
+        -240
+      ],
+      "id": "48a3fdfd-c495-430e-96e0-2c5da4a3a309",
+      "name": "list files in /SULIMA",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Parse tags": {
+      "main": [
+        [
+          {
+            "node": "If routing okay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If routing okay": {
+      "main": [
+        [
+          {
+            "node": "Move to target",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Move to unsorted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "list files in /SULIMA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "list files in /SULIMA": {
+      "main": [
+        [
+          {
+            "node": "Parse tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2a342ea2-6a1b-449b-ae42-f9802c5c42a3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "9Yd0G8URL3yPqXNJ",
+  "tags": []
+}

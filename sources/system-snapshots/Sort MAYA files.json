@@ -1,0 +1,228 @@
+{
+  "name": "Sort MAYA files",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const CLIENT_TAG = \"Maya\";\n\nconst MATRIX = {\n    \"Admin|Admin\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Asset\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|B-Roll\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Backup\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Admin|Copy\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Cover\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Design\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Featured-image\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Headshot\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Info\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Interior\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Inspo\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Marketing\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Newsletter\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Admin|Painting-Celia\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL76\",\n  \"Admin|Sailor's-Code\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Social-image\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Admin|Untitled-Kelsey\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Admin|Video\": \"1Uzt32vdzpwWtCvlMdeebxtAKYtcWjuqg\",\n  \"Asset|Asset\": \"1I8Dez0rhnfK1BdJs4O_7ZALuUN5bIurm\",\n  \"Asset|B-Roll\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Asset|Backup\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Asset|Copy\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Asset|Cover\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Asset|Design\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Asset|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Asset|Headshot\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Asset|Info\": \"1I8Dez0rhnfK1BdJs4O_7ZALuUN5bIurm\",\n  \"Asset|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Asset|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Asset|Marketing\": \"1I8Dez0rhnfK1BdJs4O_7ZALuUN5bIurm\",\n  \"Asset|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Asset|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Asset|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Asset|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Asset|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Asset|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Asset|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Asset|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Asset|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"B-Roll|Backup\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"B-Roll|Cover\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Design\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"B-Roll|Headshot\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Info\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Interior\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Inspo\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Marketing\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"B-Roll|Newsletter\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"B-Roll|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL76\",\n  \"B-Roll|Sailor's-Code\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"B-Roll|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"B-Roll|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"B-Roll|Untitled-Kelsey\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Copy|Copy\": \"1jxC5-kXTYEthBsr18OtKpgTbs3XTKHfV\",\n  \"Copy|Cover\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Copy|Design\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Copy|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Copy|Headshot\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Copy|Info\": \"1jxC5-kXTYEthBsr18OtKpgTbs3XTKHfV\",\n  \"Copy|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Copy|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Copy|Marketing\": \"1jxC5-kXTYEthBsr18OtKpgTbs3XTKHfV\",\n  \"Copy|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Copy|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Copy|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Copy|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Copy|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Copy|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Copy|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Copy|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Copy|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Cover|Cover\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Cover|Design\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Cover|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Cover|Headshot\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Cover|Info\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Cover|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Cover|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Cover|Marketing\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Cover|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Cover|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Cover|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Cover|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Cover|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Cover|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Cover|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Cover|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Cover|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Design|Design\": \"1R6_DoZSY0HqNG3atkRihKyjnXlXM-qLn\",\n  \"Design|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Design|Headshot\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Design|Info\": \"1R6_DoZSY0HqNG3atkRihKyjnXlXM-qLn\",\n  \"Design|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Design|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Design|Marketing\": \"1R6_DoZSY0HqNG3atkRihKyjnXlXM-qLn\",\n  \"Design|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Design|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Design|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Design|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Design|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Design|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Design|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Design|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Design|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Featured-image|Featured-image\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Headshot\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Info\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Interior\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Inspo\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Marketing\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Featured-image|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Featured-image|Painting-Celia\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL76\",\n  \"Featured-image|Sailor's-Code\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Featured-image|Source\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Untitled-Kelsey\": \"1R-P27joAfrXZ_BAAoXefChIegp_RFoFW\",\n  \"Featured-image|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Headshot|Headshot\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Info\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Interior\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Inspo\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Marketing\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Newsletter\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Headshot|Painting-Celia\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL80\",\n  \"Headshot|Sailor's-Code\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Headshot|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Headshot|Untitled-Kelsey\": \"1zeczUMlzYUAQv6t1ZFF7jlnsLiPswUow\",\n  \"Headshot|Video\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Info|Info\": \"1I8Dez0rhnfK1BdJs4O_7ZALuUN5bIurm\",\n  \"Info|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Info|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Info|Marketing\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Info|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Info|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Info|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Info|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL78\",\n  \"Info|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Info|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Info|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Info|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Info|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Interior|Interior\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Interior|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Interior|Marketing\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Interior|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Interior|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Interior|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Interior|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL81\",\n  \"Interior|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Interior|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Interior|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Interior|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Interior|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Inspo|Inspo\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Inspo|Marketing\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Inspo|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Inspo|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Inspo|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Inspo|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL75\",\n  \"Inspo|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Inspo|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Inspo|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Inspo|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Inspo|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Marketing|Marketing\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Marketing|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Marketing|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Marketing|Painting-Celia\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Marketing|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL73\",\n  \"Marketing|Sailor's-Code\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Marketing|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Marketing|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Marketing|Untitled-Kelsey\": \"1liZVn5ML72uIAoAhHkp-gcvV2PUbMxIC\",\n  \"Marketing|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Newsletter|Newsletter\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Newsletter|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Newsletter|Painting-Celia\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Newsletter|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL74\",\n  \"Newsletter|Sailor's-Code\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Newsletter|Social-image\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Newsletter|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Newsletter|Untitled-Kelsey\": \"1Ge-0kbMlbbq3Mm6u9ueKITY5H0oFxbXU\",\n  \"Newsletter|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"OLD|OLD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Painting-Celia\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|PSD\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Sailor's-Code\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Social-image\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Source\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Untitled-Kelsey\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"OLD|Video\": \"1FPVSF11YWp7DV9SCG-6uUx43KYfhn84i\",\n  \"Painting-Celia|Painting-Celia\": \"1HYgKE8KHG3aHa5yssRP5QkYSCkixs6Iv\",\n  \"Painting-Celia|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL84\",\n  \"Painting-Celia|Sailor's-Code\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Painting-Celia|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Painting-Celia|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Painting-Celia|Untitled-Kelsey\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Painting-Celia|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"PSD|PSD\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"PSD|Sailor's-Code\": \"1epreGeMwReI4rZGEjathYmZXj34jDL84\",\n  \"PSD|Social-image\": \"1epreGeMwReI4rZGEjathYmZXj34jDL76\",\n  \"PSD|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"PSD|Untitled-Kelsey\": \"1epreGeMwReI4rZGEjathYmZXj34jDL84\",\n  \"PSD|Video\": \"1epreGeMwReI4rZGEjathYmZXj34jDL67\",\n  \"Sailor's-Code|Sailor's-Code\": \"1tZYdQCEeHiMObOUF-vn2Zx_IAgH-pQe2\",\n  \"Sailor's-Code|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Sailor's-Code|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Sailor's-Code|Untitled-Kelsey\": \"1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd\",\n  \"Sailor's-Code|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Social-image|Social-image\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Social-image|Source\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Social-image|Untitled-Kelsey\": \"1qUXWXlXls6AuziR3mRgM2QESSlalhpSF\",\n  \"Social-image|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Source|Source\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Source|Untitled-Kelsey\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Source|Video\": \"121Q8rdnvAjNHDkawLfHg1IAV8Ay02DxJ\",\n  \"Untitled-Kelsey|Untitled-Kelsey\": \"1RTlmvtOz279OOwW6rzsKi07hzWmbIFdE\",\n  \"Untitled-Kelsey|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\",\n  \"Video|Video\": \"19dJbRq6GVwGrt9mZJ3NegsuriQ7G57vt\"\n};\n\nconst items = $input.all();\n\nreturn items.map(item => {\n  const data = item.json;\n  const filename = data.name || \"\";\n  const result = { ...data, filename };\n\n  const match = filename.match(/\\[(.*?)\\]/);\n  if (!match) {\n    result.tagStatus = \"no-brackets\";\n    result.routingStatus = \"unsorted-no-brackets\";\n    return { json: result };\n  }\n\n  const raw = match[1].trim();\n  if (!raw) {\n    result.tagStatus = \"empty-brackets\";\n    result.routingStatus = \"unsorted-empty-brackets\";\n    return { json: result };\n  }\n\n  const tags = raw.split(/\\s+/);\n  const nonClientTags = tags.filter(\n    t => t.toLowerCase() !== CLIENT_TAG.toLowerCase()\n  );\n\n  result.rawTagString = raw;\n  result.tags = tags;\n  result.nonClientTags = nonClientTags;\n\n  if (nonClientTags.length === 0) {\n    result.tagStatus = \"no-nonclient-tags\";\n    result.routingStatus = \"unsorted-not-enough-tags\";\n    return { json: result };\n  }\n\n  let key;\n  let targetFolderId;\n\n  if (nonClientTags.length === 1) {\n    const tag = nonClientTags[0];\n    key = `${tag}|${tag}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  } else {\n    const tagA = nonClientTags[0];\n    const tagB = nonClientTags[1];\n    const sortedPair = [tagA, tagB].sort();\n    key = `${sortedPair[0]}|${sortedPair[1]}`;\n    result.matrixKey = key;\n    targetFolderId = MATRIX[key] || null;\n  }\n\n  if (!targetFolderId) {\n    result.tagStatus = \"no-matrix-match\";\n    result.routingStatus = \"unsorted-no-matrix-match\";\n    return { json: result };\n  }\n\n  result.tagStatus = \"ok\";\n  result.routingStatus = \"ok\";\n  result.targetFolderId = targetFolderId;\n\n  return { json: result };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -576,
+        -240
+      ],
+      "id": "ce189386-107a-469c-9bc5-bc39a789b998",
+      "name": "Parse tags"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7eb76f4d-a7a5-4452-aa9b-fb76656abbb8",
+              "leftValue": "={{ $json.routingStatus }}",
+              "rightValue": "ok",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -368,
+        -240
+      ],
+      "id": "57ea906a-402a-4776-8fca-9bc31d33d62b",
+      "name": "If routing okay"
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "={{$json[\"targetFolderId\"]}}",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -288
+      ],
+      "id": "e5d1fe85-f924-472c-bbee-6aadbe199d7e",
+      "name": "Move to target",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1ykOtB1Lzao_-YY5kILRep2J-yduW-yvd",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        -128
+      ],
+      "id": "b918249f-668b-4164-85d3-216d50a4a547",
+      "name": "Move to unsorted",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -960,
+        -240
+      ],
+      "id": "7620f4c5-b2ed-40dc-8b8b-a27256d2f6e4",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "searchMethod": "query",
+        "queryString": "'1jAZkSF-w0eaCJxC0iHv4Zyih8bUYcsTj' in parents and trashed = false and mimeType != 'application/vnd.google-apps.folder'",
+        "returnAll": true,
+        "filter": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -768,
+        -240
+      ],
+      "id": "5816b7f6-948d-4f14-8967-be29b317f782",
+      "name": "list files in /MAYA",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "6doKwKDUpt5uiNS6",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Parse tags": {
+      "main": [
+        [
+          {
+            "node": "If routing okay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If routing okay": {
+      "main": [
+        [
+          {
+            "node": "Move to target",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Move to unsorted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "list files in /MAYA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "list files in /MAYA": {
+      "main": [
+        [
+          {
+            "node": "Parse tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "8eea2707-6e86-48e7-87f3-7b03eb559f8d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "62bd52f8b4ece52a843742601d712f5bb7b30c651ead50c15d3765df46d28374"
+  },
+  "id": "d71g649FL1aXowtA",
+  "tags": []
+}

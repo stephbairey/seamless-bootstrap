@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Mail Filters</title>
+	<id>tag:mail.google.com,2008:filters:z0000001760487268369*0686845115414642964,z0000001760487268550*8833821441513258152,z0000001760487268889*4416092010107255590,z0000001760487269532*8455116627852540580,z0000001760487270243*6723866122175580456,z0000001760487270950*0445136450866856477,z0000001760487271641*5722333301407677643,z0000001760487272404*8895767780187756434,z0000001760487273185*7977134994959106647,z0000001760487273998*4951085132493185389,z0000001760487275506*4333290570168011978,z0000001760487277693*4664902752758712359,z0000001760487278193*6038063622229343088,z0000001760487278961*2897218337914877329,z0000001760487279555*7665517918016898939,z0000001760487280236*0333645512348090455,z0000001760553242460*0898853963951137101,z0000001760554065335*7135321544619788943,z0000001760554479565*2545741648827421932,z0000001760557182450*6784012352963564310,z0000001760557211015*6402979567249004943,z0000001760572156026*7239944681171736360,z0000001760572181828*4411073714363605473,z0000001760572200291*7827442590378817389,z0000001760572218678*0622007402208998523,z0000001760572236275*4971195031938081854,z0000001760572236796*5076656953849183474,z0000001760910732210*8775151327372053351,z0000001761327854743*3099158571117296594,z0000001762542142224*7525326358267077620,z0000001762542223136*2636606538546817646,z0000001762543893985*5010702066738241429,z0000001762543894498*0482800774965827588,z0000001762543895693*7601492720845611565,z0000001762543896451*8627490336092424257,z0000001762543898455*8292127053301682550,z0000001762543900648*5668652299252866596,z0000001762543901371*8470895883200664731,z0000001762543902682*2991473050800690003,z0000001762543903338*4627904633078713860,z0000001762543904530*2989848853203585542,z0000001762543905353*7969836026499963758,z0000001762543906344*3548705583453596950,z0000001762543907486*2848804186806139809,z0000001762543908218*7584671547643449875,z0000001766086454684*3772946867693788950,z0000001767892078909*3747141686555582780,z0000001768685324734*4833356458752835983</id>
+	<updated>2026-02-28T24:14:05Z</updated>
+	<author>
+		<name>Steph Bairey</name>
+		<email>stephbairey@gmail.com</email>
+	</author>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487268369*0686845115414642964</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='(*)'/>
+		<apps:property name='smartLabelToApply' value='^smartlabel_personal'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487268550*8833821441513258152</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='nicole@daltonlawoffice.net OR shellie@daltonlawoffice.net OR coral@daltonlawoffice.net OR ndaltonlaw@gmail.com'/>
+		<apps:property name='label' value='Nicole'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487268889*4416092010107255590</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='danielamorescalchi@gmail.com'/>
+		<apps:property name='label' value='Daniela'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487269532*8455116627852540580</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='lynnahaller@gmail.com OR *@lynnahaller.com'/>
+		<apps:property name='label' value='Lynn'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487270243*6723866122175580456</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='portlandpoet@gmail.com'/>
+		<apps:property name='label' value='Carolyn'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487270950*0445136450866856477</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='sulimama@gmail.com OR sulima@sulimamalzin.net'/>
+		<apps:property name='label' value='Sulima'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487271641*5722333301407677643</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='*@linguaink.com'/>
+		<apps:property name='label' value='Lingua Ink'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487272404*8895767780187756434</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='sulimama@gmail.com OR sulima@sulimamalzin.net OR portlandpoet@gmail.com OR danielamorescalchi@gmail.com OR lynnahaller@gmail.com OR nd@drwendyleighwhite.com OR suzanne@suzannemanserphd.com OR pnschoof@comcast.net'/>
+		<apps:property name='label' value='Authors'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487273185*7977134994959106647</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='lynnahaller@gmail.com OR jkhamilton11@gmail.com OR Ayamewrites@gmail.com OR bbuckman@outlook.com OR maurad7@msn.com OR krezbywrites@gmail.com OR devonervin2010@gmail.com OR jill@legendarykeynotes.com'/>
+		<apps:property name='label' value='Cohort'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487273998*4951085132493185389</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='grannynewsletter@gmail.com'/>
+		<apps:property name='label' value='PRG/Newsletter'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487275506*4333290570168011978</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='((&quot;prg-members&quot; OR &quot;prg-enviro-team&quot; OR &quot;prg-gender-team&quot; OR &quot;prg-rij-team&quot; OR &quot;prg-social-team&quot; OR &quot;prg-gagh&quot;) AND gaggle.email) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487277693*4664902752758712359</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='*@tomahawkdestiny.com OR Messenger@associationvoice.com OR tdamoorage@gmail.com OR bookkeeper@tomahawkdestiny.com OR president@tomahawkdestiny.com OR secretary@tomahawkdestiny.com OR treasurer@tomahawkdestiny.com OR vicepresident@tomahawkdestiny.com OR security@tomahawkdestiny.com OR webmaster@tomahawkdestiny.com OR arc@tomahawkdestiny.com OR ggbustin@gmail.com OR bmascott@mascottec.com OR mascottwjm@gmail.com OR cmorgester@gmail.com OR charliecm542@gmail.com OR Ccm.Tango@gmail.com OR debstories2@comcast.net OR rmenenberg@yahoo.com OR Lilfroggy45@Comcast.net OR michael7125@yahoo.com OR Schultztrisha99@gmail.com OR sea.tla.lee@gmail.com OR Realhaydenisland@gmail.com OR Bmonfort@live.com OR goldgrc@gmail.com OR vimlady@yahoo.com OR delnordquist@gmail.com OR 2mikarose@gmail.com OR jflora1204@gmail.com OR andreaplaydon@gmail.com OR Glenn_Orner@yahoo.com OR samanthakmajors@gmail.com OR emunnelly@mail.com OR tdamooragepresident@gmail.com OR tomp@braleygray.com OR ReneeMWolf@outlook.com OR jsanz@sanzcreative.com OR tdaookkee@yahoo.com OR jusin24@gmail.com OR wanda.coleman.emplyment@gmail.com OR cigarladypdx@gmail.com OR dee.rzewnicki@yahoo.com OR gschoos470@gmail.com OR splash_dancer@comcast.net OR evahuntsinger@msn.com OR tracygonia@gmail.com OR jeffreysheadel@gmail.com OR k.bustos26@gmail.com OR chad.tyson@sonsray.com OR smithrobin@gmail.com OR bsorenson6@comcast.net OR t.hosford@hotmail.com OR feline.gladis@gmail.com OR somersetsue@comcast.net OR 1022audio@gmail.com OR percywise@yahoo.com'/>
+		<apps:property name='label' value='Tomahawk'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487278193*6038063622229343088</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='arc@tomahawkdestiny.com OR *.arc@tomahawkdestiny.com OR mike.duncan.pdx@gmail.com OR teresalawwill@gmail.com OR k_delleney@hotmail.com OR slydavids2@yahoo.com'/>
+		<apps:property name='label' value='ARC'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487278961*2897218337914877329</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='*@amazon.com'/>
+		<apps:property name='label' value='Amazon'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='shouldNeverSpam' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487279555*7665517918016898939</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='*@substack.com'/>
+		<apps:property name='to' value='*sulimamalzin.net'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldTrash' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760487280236*0333645512348090455</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='*@substack.com'/>
+		<apps:property name='label' value='Substack'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760553242460*0898853963951137101</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='(*@patreon.com) -from:(&quot;SalvoG&quot; bingo@patreon.com) -subject:&quot;SalvoG replied to your comment&quot;'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760554065335*7135321544619788943</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='subject' value='&quot;Some plugins were automatically updated&quot; OR &quot;Your Google Play Order Receipt&quot;'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='shouldNeverSpam' value='true'/>
+		<apps:property name='shouldNeverMarkAsImportant' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760554479565*2545741648827421932</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='&quot;Carolyn Martin Poet New order&quot; OR &quot;Lingua Ink Books New order&quot; OR &quot;Sulima MalzinNew order&quot;'/>
+		<apps:property name='label' value='Lingua Ink'/>
+		<apps:property name='shouldStar' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760557182450*6784012352963564310</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='noreply@service.paypal.com'/>
+		<apps:property name='to' value='pdxraginggrannies@gmail.com'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760557211015*6402979567249004943</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='pdxraginggrannies@gmail.com'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572156026*7239944681171736360</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='(pdxraginggrannies@gmail.com OR *@gaggle.email OR alice.shapiro2@gmail.com OR bernadine_clay@comcast.net OR bonnieleescott@yahoo.com OR carolej340@gmail.com OR cmost@yahoo.com OR crodakowski2@verizon.net OR cheyenne_chapman23@outlook.com OR ccaton@pps.net OR conniepbd@gmail.com OR cynthiablott@gmail.com OR denisebusch2@gmail.com OR licketysplit777@gmail.com OR uudoris@gmail.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572181828*4411073714363605473</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='(from:(EAC100@aol.com OR tuffythefirst@gmail.com OR gamblevelimirovic@gmail.com OR janegasperi500@gmail.com OR jmfeather@comcast.net OR joanakirchhoff@gmail.com OR tigard12345@hotmail.com OR julie@nihada.com OR drquotes@hotmail.com OR karen.erde@gmail.com OR desantis2097@gmail.com OR kathyboylan@gmail.com OR kathypinsonault@gmail.com OR leslie.dobbertin@gmail.com OR leslieskoda@gmail.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email))'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572200291*7827442590378817389</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='from:(lizspdx@gmail.com OR lynntreat@msn.com OR lynneb51@hotmail.com OR mcoon7@gmail.com OR marileedea@comcast.net OR maryannrudy@gmail.com OR stahlmarylee@gmail.com OR maveret@gmail.com OR meganvesler@gmail.com OR writenowwritelater2@yahoo.com OR npitney@gmail.com OR natmobile@comcast.net OR nancyjean.tripp@gmail.com OR pamdenham@gmail.com OR pdecrist@yahoo.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572218678*0622007402208998523</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='(from:(pollymcgraw@me.com OR rebdempsey@sbcglobal.net OR reneebove2@gmail.com OR prg.river@gmail.com OR portlandpair@live.com OR seclenda2@gmail.com OR shawnellenreeves@gmail.com OR wamplersl@comcast.net OR GrannyNewsletter@gmail.com OR sulimama@gmail.com OR susanleehanson.pdx@gmail.com OR susansaphone2@yahoo.com OR vossrothmeier@yahoo.com OR telyka@aol.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email))'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572236275*4971195031938081854</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='grannynewsletter+admins@gaggle.email OR notification@gaggle.email'/>
+		<apps:property name='label' value='PRG/PRG Bumpf'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760572236796*5076656953849183474</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='subject' value='[prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;'/>
+		<apps:property name='label' value='PRG/PRG Bumpf'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001760910732210*8775151327372053351</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='subject' value='Some plugins have failed to update'/>
+		<apps:property name='shouldTrash' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001761327854743*3099158571117296594</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='Dani Napier Harrison OR dani@consultdnh.com'/>
+		<apps:property name='label' value='Jobs'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762542142224*7525326358267077620</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='jjeremiahcasey@gmail.com OR evan.sprague@gmail.com OR kristavasquez@mac.com OR he.serena@gmail.com OR jds.racing@gmail.com OR amber.lee.bytheway@gmail.com OR petrovic.ana@gmail.com OR obenedick@gmail.com OR richshibley@yahoo.com OR *@unity3d.com'/>
+		<apps:property name='label' value='Jobs'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762542223136*2636606538546817646</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='jjeremiahcasey@gmail.com OR evan.sprague@gmail.com OR kristavasquez@mac.com OR he.serena@gmail.com OR jds.racing@gmail.com OR amber.lee.bytheway@gmail.com OR petrovic.ana@gmail.com OR obenedick@gmail.com OR richshibley@yahoo.com OR *@unity3d.com'/>
+		<apps:property name='label' value='Jobs'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543893985*5010702066738241429</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='nicole@daltonlawoffice.net OR shellie@daltonlawoffice.net OR coral@daltonlawoffice.net OR ndaltonlaw@gmail.com'/>
+		<apps:property name='label' value='Nicole'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543894498*0482800774965827588</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='danielamorescalchi@gmail.com'/>
+		<apps:property name='label' value='Daniela'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543895693*7601492720845611565</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='lynnahaller@gmail.com'/>
+		<apps:property name='label' value='Lynn'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543896451*8627490336092424257</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='portlandpoet@gmail.com'/>
+		<apps:property name='label' value='Carolyn'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543898455*8292127053301682550</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='sulimama@gmail.com OR sulima@sulimamalzin.net'/>
+		<apps:property name='label' value='Sulima'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543900648*5668652299252866596</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='sulimama@gmail.com OR sulima@sulimamalzin.net OR portlandpoet@gmail.com OR danielamorescalchi@gmail.com OR lynnahaller@gmail.com OR nd@drwendyleighwhite.com OR suzanne@suzannemanserphd.com'/>
+		<apps:property name='label' value='Authors'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543901371*8470895883200664731</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='lynnahaller@gmail.com OR jkhamilton11@gmail.com OR Ayamewrites@gmail.com OR bbuckman@outlook.com OR maurad7@msn.com OR krezbywrites@gmail.com OR devonervin2010@gmail.com OR jill@legendarykeynotes.com'/>
+		<apps:property name='label' value='Cohort'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543902682*2991473050800690003</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='((&quot;prg-members&quot; OR &quot;prg-enviro-team&quot; OR &quot;prg-gender-team&quot; OR &quot;prg-rij-team&quot; OR &quot;prg-social-team&quot; OR &quot;prg-gagh&quot;) AND gaggle.email) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543903338*4627904633078713860</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='*@tomahawkdestiny.com OR Messenger@associationvoice.com OR tdamoorage@gmail.com OR bookkeeper@tomahawkdestiny.com OR president@tomahawkdestiny.com OR secretary@tomahawkdestiny.com OR treasurer@tomahawkdestiny.com OR vicepresident@tomahawkdestiny.com OR security@tomahawkdestiny.com OR webmaster@tomahawkdestiny.com OR arc@tomahawkdestiny.com OR ggbustin@gmail.com OR bmascott@mascottec.com OR mascottwjm@gmail.com OR cmorgester@gmail.com OR charliecm542@gmail.com OR Ccm.Tango@gmail.com OR debstories2@comcast.net OR rmenenberg@yahoo.com OR Lilfroggy45@Comcast.net OR michael7125@yahoo.com OR Schultztrisha99@gmail.com OR sea.tla.lee@gmail.com OR Realhaydenisland@gmail.com OR Bmonfort@live.com OR goldgrc@gmail.com OR vimlady@yahoo.com OR delnordquist@gmail.com OR 2mikarose@gmail.com OR jflora1204@gmail.com OR andreaplaydon@gmail.com OR Glenn_Orner@yahoo.com OR samanthakmajors@gmail.com OR emunnelly@mail.com OR tdamooragepresident@gmail.com OR tomp@braleygray.com OR ReneeMWolf@outlook.com OR jsanz@sanzcreative.com OR tdaookkee@yahoo.com OR jusin24@gmail.com OR wanda.coleman.emplyment@gmail.com OR cigarladypdx@gmail.com OR dee.rzewnicki@yahoo.com OR gschoos470@gmail.com OR splash_dancer@comcast.net OR evahuntsinger@msn.com OR tracygonia@gmail.com OR jeffreysheadel@gmail.com OR k.bustos26@gmail.com OR chad.tyson@sonsray.com OR smithrobin@gmail.com OR bsorenson6@comcast.net OR t.hosford@hotmail.com OR feline.gladis@gmail.com OR somersetsue@comcast.net OR 1022audio@gmail.com OR percywise@yahoo.com'/>
+		<apps:property name='label' value='Tomahawk'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543904530*2989848853203585542</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='arc@tomahawkdestiny.com OR *.arc@tomahawkdestiny.com OR mike.duncan.pdx@gmail.com OR teresalawwill@gmail.com OR k_delleney@hotmail.com OR slydavids2@yahoo.com'/>
+		<apps:property name='label' value='ARC'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543905353*7969836026499963758</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='(pdxraginggrannies@gmail.com OR *@gaggle.email OR alice.shapiro2@gmail.com OR bernadine_clay@comcast.net OR bonnieleescott@yahoo.com OR carolej340@gmail.com OR cmost@yahoo.com OR crodakowski2@verizon.net OR cheyenne_chapman23@outlook.com OR ccaton@pps.net OR conniepbd@gmail.com OR cynthiablott@gmail.com OR denisebusch2@gmail.com OR licketysplit777@gmail.com OR uudoris@gmail.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -from:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543906344*3548705583453596950</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='(to:(EAC100@aol.com OR tuffythefirst@gmail.com OR gamblevelimirovic@gmail.com OR janegasperi500@gmail.com OR jmfeather@comcast.net OR joanakirchhoff@gmail.com OR tigard12345@hotmail.com OR julie@nihada.com OR drquotes@hotmail.com OR karen.erde@gmail.com OR desantis2097@gmail.com OR kathyboylan@gmail.com OR kathypinsonault@gmail.com OR leslie.dobbertin@gmail.com OR leslieskoda@gmail.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -to:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email))'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543907486*2848804186806139809</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='to:(lizspdx@gmail.com OR lynntreat@msn.com OR lynneb51@hotmail.com OR mcoon7@gmail.com OR marileedea@comcast.net OR maryannrudy@gmail.com OR stahlmarylee@gmail.com OR maveret@gmail.com OR meganvesler@gmail.com OR writenowwritelater2@yahoo.com OR npitney@gmail.com OR natmobile@comcast.net OR nancyjean.tripp@gmail.com OR pamdenham@gmail.com OR pdecrist@yahoo.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -to:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email)'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001762543908218*7584671547643449875</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value='(to:(pollymcgraw@me.com OR rebdempsey@sbcglobal.net OR reneebove2@gmail.com OR prg.river@gmail.com OR portlandpair@live.com OR seclenda2@gmail.com OR shawnellenreeves@gmail.com OR wamplersl@comcast.net OR GrannyNewsletter@gmail.com OR sulimama@gmail.com OR susanleehanson.pdx@gmail.com OR susansaphone2@yahoo.com OR vossrothmeier@yahoo.com OR telyka@aol.com) -subject:([prgfyi] OR &quot;E-Vine&quot; OR &quot;messages awaiting moderation&quot; OR &quot;events in the last 24 hours&quot;) -to:(grannynewsletter+admins@gaggle.email OR notification@gaggle.email))'/>
+		<apps:property name='label' value='PRG'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001766086454684*3772946867693788950</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='grannynewsletter@gmail.com OR granny-newsletter@gaggle.email'/>
+		<apps:property name='label' value='PRG/Newsletter'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001767892078909*3747141686555582780</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='from' value='devonervin2010@gmail.com'/>
+		<apps:property name='label' value='Devon'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001768685324734*4833356458752835983</id>
+		<updated>2026-02-28T24:14:05Z</updated>
+		<content></content>
+		<apps:property name='to' value='webgranny@bairey.com'/>
+		<apps:property name='label' value='PRG/Webgranny'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+</feed>
