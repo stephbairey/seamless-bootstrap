@@ -20,7 +20,7 @@ The most important convention. Maya operates under multiple identities, and ever
 
 **Due dates:** Always set. Never left blank.
 
-**Descriptions:** Optional. Used for meeting notes, zoom links, addresses, and post-meeting notes. Not for task specs.
+**Descriptions:** Optional. Used for meeting notes, zoom links, addresses, and post-meeting notes. Not usually for task specs.
 
 **Checklists:** Not used.
 
@@ -43,7 +43,7 @@ The most important convention. Maya operates under multiple identities, and ever
 
 ## Calendar Naming
 
-**Client meetings:** `ClientName and Steph @ Lingua Ink` for formal meetings (e.g., "Devon Ervin and Steph @ Lingua Ink"). `Client:Steph` for informal touchpoints (e.g., "Daniela:Steph").
+**Client meetings:** `ClientName and Steph @ Lingua Ink` for formal meetings created by Calendly (e.g., "Devon Ervin and Steph @ Lingua Ink"). `Client:Maya` for informal touchpoints (e.g., "Carolyn:Maya").
 
 **Multi-person meetings:** `Name:Name:Name` format (e.g., "Eve:Lynn:Maya").
 
@@ -55,15 +55,15 @@ The most important convention. Maya operates under multiple identities, and ever
 
 27 labels, organized by function:
 
-**Client/relationship:** Amazon, Authors (with sub-labels: Carolyn, Cohort, Daniela, Devon), Lynn, Nicole, Sulima
+**Client/relationship:** Authors, Carolyn, Cohort, Daniela, Devon, Lynn, Nicole, Sulima
 
 **Organizational:** ARC, PRG (with sub-labels: Newsletter, PRG Bumpf, PRG To Do, Webgranny), Tomahawk
 
-**Business:** Business (with sub-labels: SEO, Tools), Jobs, Lingua Ink, Taxes
+**Business:** Amazon, Business (with sub-labels: SEO, Tools), Jobs, Lingua Ink, Taxes
 
-**Content/reference:** Articles, KEEPERS, Substack
+**Content/reference:** Articles (with sub-labels: Business, SEO, Tools), Substack, Jobs, Taxes
 
-**Personal:** My Travel, Snoozed
+**Personal:** My Travel, Snoozed, KEEPERS
 
 ## Communication Style
 
@@ -99,9 +99,9 @@ The most important convention. Maya operates under multiple identities, and ever
 
 **PRG newsletter:** Weekly, Thursday mornings.
 
-**Royalty reports:** Monthly, 1st of month.
+**Royalty reports:** Quarterly, 1st of January, April, July, October.
 
-**Writing Cohort:** Weekly, Sundays noon-2pm (canonical calendar: mjbairey).
+**Writing Cohort:** Twice weekly, Thursday and Sundays noon-2pm (canonical calendar: mjbairey).
 
 ## Design Principles
 

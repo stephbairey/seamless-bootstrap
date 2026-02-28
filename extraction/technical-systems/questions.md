@@ -151,7 +151,7 @@ A: facebook and instagram, though I could post to more from there. I have not be
 A: the subscribers are all for Maya Bairey, author. They have been gathered over time via marketing and subscriptions. I do not segment yet.
 
 38. **Do you use Substack for anything beyond Sulima's Light Waves?** Or is it a single-client tool?
-A: I post my own bairey.com blogs there.
+A: I post my own bairey.com blogs there, at mayabairey.substack.com.
 
 ---
 
