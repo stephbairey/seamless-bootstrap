@@ -6,7 +6,7 @@
 
 hub_account: stephbairey@gmail.com
 
-domain_forwarding: true  # All domain addresses forward to stephbairey@gmail.com at hosting level
+all_forwarding: true  # All addresses forward to stephbairey@gmail.com — domain emails at hosting level, Gmail accounts via Gmail forwarding. Every address funnels into one inbox.
 
 identities:
   # --- Gmail-native addresses (no external mail server) ---
