@@ -92,7 +92,7 @@ The template is a guide, not a requirement — any format works. The key require
 Documents from our existing conversations that already contain structured analysis:
 
 - **How Maya Works** (audit report, Feb 27 2026) — Comprehensive system analysis. Most information-dense source we have.
-- **Brand inventory and office process work** from prior sessions.
+- **Brand inventory and office process work** from prior sessions. Multiple rich sources!
 - **Let's Meet CLAUDE.md and plan.md** — Structural templates for SB's deliverables.
 
 **Accuracy warning:** Handoff documents and audit reports from Claude conversations may contain errors, especially specific values, dates, or technical details. These are high-value starting points, not ground truth. Errors discovered during extraction go in `maya-corrections.md`.
@@ -144,13 +144,11 @@ From the audit and our conversations, we have confirmed knowledge about Maya's s
 - `mjbairey@gmail.com` — Additional personal, writer access.
 
 **Recurring rhythms observed:**
-- Monday: HoD (House of Destiny/TDA) meeting, 1–2pm
-- Tuesday: Client meetings (Devon, Lynn) as scheduled
-- Wednesday: Steph:Sulima 9–10am, PRG newsletter work 10–11am
-- Thursday: Writing Cohort noon–2pm
+- Tuesday: HoD (Hallway of Doorkbos book meeting/Lynn) meeting, 1–2pm
+- Thursday: Steph:Sulima 9–10am, PRG newsletter work 10–11am, Writing Cohort noon–2pm
 - Friday: Story Lounge 9–10am
 - Sunday: Writing Cohort noon–2pm (with post-meeting critique rotation)
-- First of month: Royalty reports
+- First of quarter: Royalty reports
 
 **Meeting naming conventions mirror ClickUp:** "Person:Person" for 1:1s, proper case for group events.
 
@@ -162,10 +160,23 @@ From the audit and our conversations, we have confirmed knowledge about Maya's s
 **Writing/artistic identity:** `maya@bairey.com`
 
 **Routing logic (needs verification):**
-- Steph/stephbairey — Family, personal, Dalton Law, some client communication
-- Lingua Ink/linguainkmedia — Business operations, client work, PRG/TDA organization
-- Maya/mjbairey or maya@bairey.com — Writing, cohort, artistic work, blog
-- grannynewsletter — PRG newsletter distribution
+- stephbairey@gmail.com — default inbox, personal/community, receives all forwards
+- steph@linguaink.com — Lingua Ink Books business, publishing clients
+- steph@linguainkmedia.com — Lingua Ink Media business, TDA client projects, web dev
+- steph@bairey.com — personal/job search/formal/government-name contexts
+- maya@bairey.com — author correspondence, writing cohort, NIWA
+- maya@linguaink.com — creative director work, illustrator coordination, author clients (covers both LIB and LIM creative work since maya@linguainkmedia.com doesn't exist)
+- mjbairey@gmail.com — creative personal/community, Google-login contexts
+- grannynewsletter@gmail.com — PRG newsletter sends and logistics
+- pdxraginggrannies@gmail.com — PRG official/external communications
+- webmaster@tomahawkdestiny.com — TDA website operations
+- steph.bairey.arc@tomahawkdestiny.com — personal ARC committee correspondence
+- arc@tomahawkdestiny.com — ARC shared distribution list
+- doorknobs@lynnahaller.com — Lynn/HoD book shared distribution
+- webgranny@gmail.com — IRG work
+- info@linguaink.com — Lingua Ink front-facing contact
+- webgranny@bairey.com (legacy, predates inbox access to webgranny@gmail.com)
+- scb.zombie@gmail.com (legacy, should retire but tied to many signups)
 
 ### 4d. File Management System
 
@@ -173,7 +184,7 @@ From the audit and our conversations, we have confirmed knowledge about Maya's s
 
 **Tag-based routing:** Files named with bracketed tags like `[Painting-Celia Cover].jpg`. The tag determines routing destination.
 
-**Client routing targets:** MAYA, LYNN, SULIMA, Devon, Lingua Ink (full list needs extraction from routing matrix).
+**Client routing targets:** MAYA, LYNN, SULIMA (other clients not yet added to process).
 
 **Matrix spreadsheet:** Maps tags to destination folders. Configuration layer for n8n automation — avoids AI costs by using deterministic rules.
 
@@ -182,25 +193,26 @@ From the audit and our conversations, we have confirmed knowledge about Maya's s
 | Person/Entity | Relationship | Context |
 |---------------|-------------|---------|
 | Pete | Husband | TDA board responsibilities, personal calendar items |
-| Lynn Haller | Client + friend | Author, publishing client, cohort member |
-| Sulima Malzin | Mentor, 86 years old | Weekly calls (Wed 9am), website work, writing |
-| Devon Ervin | Client | Website project (Eventin, BookingPress, sales pages), Making Space program |
-| Daniela Morescalchi | Client | Calendly-booked meetings, international (WhatsApp) |
-| Carolyn Martin | Client | Referenced in ClickUp projects |
-| Dalton Law | Client | Separate project category |
-| ARC/TDA | Organizational commitment | Tomahawk Destiny Association, resurvey coordination, board-adjacent via Pete |
-| PRG | Organizational commitment | Portland Raging Grannies, newsletter creation/distribution |
-| IRG | Organizational commitment | International Raging Grannies |
+| Lynn Haller | Client + friend | Signed author, publishing client, cohort member |
+| Sulima Malzin | Client + Mentor, 86 years old | Signed author, Weekly calls (Thu 9am), website work, writing |
+| Devon Ervin | Client | not-signed Author, Website project, Making Space program |
+| Daniela Morescalchi | Client | Signed author, ex-Intel colleague |
+| Carolyn Martin | Client | Signed author, website work |
+| Dalton Law | Client | LIM client, website work, potential Diary app partner |
+| ARC/TDA | Organizational commitment | Tomahawk Destiny Association Architectural Committee, chair, board-adjacent via Pete |
+| TDA | Client | Tomahawk Destiny Association, website work |
+| PRG | Organizational commitment | Portland Raging Grannies, newsletter creation/distribution, website work, all tech |
+| IRG | Organizational commitment | International Raging Grannies, website work |
 | Writing Cohort | Community Maya runs | Thu/Sun via Zoom, critique rotation, 5–8 regular members |
-| Story Lounge | Community | Friday alumni meetup |
+| Story Lounge | Community | Friday Intel alumni meetup |
 
 ### 4f. Identity Model
 
-**Stephanie (Steph) Bairey** — Legal/business/family name. Used for contracts, Dalton Law, personal appointments, dentist, Pete-related items.
+**Stephanie (Steph) Bairey** — Legal/business/family name. Used for contracts, personal appointments, dentist, Pete-related items.
 
 **Maya Bairey** — Pen name. Used for Lingua Ink, writing, artistic work, the romance blog, the writing cohort, and creative endeavors. This is the name Claude uses.
 
-**Lingua Ink Media** — The business entity through which Maya provides creative services including website development, book publishing, and typesetting.
+**Lingua Ink Media** — The business entity through which Maya provides creative services including SEO/website development, book publishing/marketing.
 
 **The boundary is intentional** — not a casual preference but a considered practice of identity management that reflects Maya's therapeutic work around inhabiting herself authentically vs. arranging herself for others.
 
