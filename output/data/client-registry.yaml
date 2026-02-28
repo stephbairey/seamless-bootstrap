@@ -1,0 +1,104 @@
+# Client Registry (Initial)
+# Phase 1 output — Seamless Bootstrap
+# Source: extraction/technical-systems/clickup.md (Project field options)
+# Maya-reviewed: 2026-02-27
+# Note: This is the initial structure from ClickUp Project dropdown values.
+#       Relationship details, service context, and contact info will be added in Phase 2.
+
+clients:
+  - name: "Lynn Haller"
+    clickup_project: "Lynn Haller"
+    clickup_option_id: "3fbb38e5-4b0e-4cda-b15e-9de5eeabab78"
+    has_file_routing: true
+    has_website: true
+    website: "lynnahaller.com"
+    ga4_property_id: "520632482"
+    active: true
+
+  - name: "Devon Ervin"
+    clickup_project: "Devon Ervin"
+    clickup_option_id: "d4f58cb0-5fb0-44b7-8369-3a88e56d19e3"
+    has_file_routing: false
+    has_website: true
+    active: true
+
+  - name: "Sulima Malzin"
+    clickup_project: "Sulima Malzin"
+    clickup_option_id: "9f8c78f8-d3e5-4a1e-b965-a44360270d0e"
+    has_file_routing: true
+    has_website: true
+    website: "sulimamalzin.net"
+    ga4_property_id: "420435585"
+    active: true
+
+  - name: "Daniela Morescalchi"
+    clickup_project: "Daniela Morescalchi"
+    clickup_option_id: "0ec58af6-7d30-4c13-9e61-dc0e4f5e8ffa"
+    has_file_routing: false
+    has_website: false
+    active: true
+    note: "Author whose books are being edited for publication"
+
+  - name: "Carolyn Martin"
+    clickup_project: "Carolyn Martin"
+    clickup_option_id: "06811ed1-4ab2-40ee-ba82-adca7a2a5e24"
+    has_file_routing: false
+    has_website: false
+    active: true
+
+  - name: "Nicole Dalton"
+    clickup_project: "Dalton Law"
+    clickup_option_id: "1d91e23f-7fa3-416e-b34e-cd31e2b2e815"
+    has_file_routing: false
+    has_website: false
+    active: true
+
+business_lines:
+  - name: "Lingua Ink Books"
+    clickup_project: "Lingua Ink Books"
+    clickup_option_id: "f4e21e7d-f67b-45a6-b03a-f879eb0a2fcd"
+    website: "linguaink.com"
+    ga4_property_id: "481632955"
+
+  - name: "Lingua Ink Media"
+    clickup_project: "Lingua Ink Media"
+    clickup_option_id: "d6f47edf-f30c-49d0-8e5f-bf7e16e0bbeb"
+    website: "linguainkmedia.com"
+
+  - name: "Lingua Ink Courses"
+    clickup_project: "Lingua Ink Courses"
+    clickup_option_id: "afb50f97-9dfb-41e8-a39b-a6356aaabef2"
+
+  - name: "Lingua Ink Cohorts"
+    clickup_project: "Lingua Ink Cohorts"
+    clickup_option_id: "8fedc32c-98f2-436f-b1bd-a1d3e1f88bf7"
+    note: "Planned paid cohorts (not yet active)"
+
+  - name: "Free Cohort"
+    clickup_project: "Free Cohort"
+    clickup_option_id: "fb1ff60f-2d14-49a2-9afc-f55efc4f8a68"
+    note: "Current cohort (since Sept 2024, free). Separate from Cohorts for time tracking."
+
+organizations:
+  - name: "Tomahawk Destiny Association"
+    clickup_project: "Tomahawk Destiny"
+    clickup_option_id: "fabd2375-c8fe-418f-a810-ac0a2dcae6e0"
+
+  - name: "Portland Raging Grannies"
+    clickup_project: "Raging Grannies"
+    clickup_option_id: "48dfc203-1c7a-4fbd-8d3b-4ef845159629"
+
+personal:
+  - name: "Maya Bairey"
+    clickup_project: "Maya Bairey"
+    clickup_option_id: "1f3f1a68-5e97-4abf-a4e4-cba3e2b1e2c2"
+    website: "bairey.com"
+    ga4_property_id: "420399644"
+
+  - name: "Personal"
+    clickup_project: "Personal"
+    clickup_option_id: "a19fd7b3-ffbc-456d-88d5-43dac8ba3e49"
+
+  - name: "Job Search"
+    clickup_project: "Job Search"
+    clickup_option_id: "d30e55ad-db47-47d3-a5e3-3fb5e9a94db3"
