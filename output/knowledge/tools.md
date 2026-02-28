@@ -5,7 +5,7 @@ Reference document for all tools in Maya's ecosystem. Covers what each tool does
 ## Core Operational Stack
 
 ### Gmail (stephbairey@gmail.com)
-Maya's "operational nervous system." One inbox receives all email across 16 Send-As identities spanning 6 domains. Identity selection follows a two-axis model: **name** (Steph for business/operations, Maya for creative/author) and **domain** (indicating organizational context). Reply-from is automatic based on which address received the inbound message. For new compositions, the decision is "what hat am I wearing?" — though relationship history can override strict role logic when a contact knows Maya by a particular name.
+Maya's "operational nervous system." One inbox receives all email across 17 Send-As identities spanning 6 domains. Identity selection follows a two-axis model: **name** (Steph for business/operations, Maya for creative/author) and **domain** (indicating organizational context). Reply-from is automatic based on which address received the inbound message. For new compositions, the decision is "what hat am I wearing?" — though relationship history can override strict role logic when a contact knows Maya by a particular name.
 
 27 labels organize incoming mail. 48 Gmail filters handle automatic labeling, archiving, and noise management. All domain email (bairey.com, linguaink.com, linguainkmedia.com, tomahawkdestiny.com, lynnahaller.com) forwards to stephbairey@gmail.com at the hosting level.
 

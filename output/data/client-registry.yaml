@@ -14,6 +14,8 @@ clients:
     website: "lynnahaller.com"
     ga4_property_id: "520632482"
     active: true
+    relationship: "Client + friend"
+    note: "Signed author, publishing client, cohort member"
 
   - name: "Devon Ervin"
     clickup_project: "Devon Ervin"
@@ -21,6 +23,8 @@ clients:
     has_file_routing: false
     has_website: true
     active: true
+    relationship: "Client"
+    note: "Not-signed author, website project, Making Space program"
 
   - name: "Sulima Malzin"
     clickup_project: "Sulima Malzin"
@@ -30,6 +34,8 @@ clients:
     website: "sulimamalzin.net"
     ga4_property_id: "420435585"
     active: true
+    relationship: "Client + mentor, 86 years old"
+    note: "Signed author, weekly calls (Thu 9am), website work, writing"
 
   - name: "Daniela Morescalchi"
     clickup_project: "Daniela Morescalchi"
@@ -37,7 +43,8 @@ clients:
     has_file_routing: false
     has_website: false
     active: true
-    note: "Author whose books are being edited for publication"
+    relationship: "Client"
+    note: "Signed author, ex-Intel colleague"
 
   - name: "Carolyn Martin"
     clickup_project: "Carolyn Martin"
@@ -45,6 +52,8 @@ clients:
     has_file_routing: false
     has_website: false
     active: true
+    relationship: "Client"
+    note: "Signed author, website work"
 
   - name: "Nicole Dalton"
     clickup_project: "Dalton Law"
@@ -52,6 +61,8 @@ clients:
     has_file_routing: false
     has_website: false
     active: true
+    relationship: "Client"
+    note: "LIM client, website work, potential Diary app partner"
 
 business_lines:
   - name: "Lingua Ink Books"
@@ -83,10 +94,12 @@ organizations:
   - name: "Tomahawk Destiny Association"
     clickup_project: "Tomahawk Destiny"
     clickup_option_id: "fabd2375-c8fe-418f-a810-ac0a2dcae6e0"
+    note: "Dual role: organizational commitment (ARC chair, board-adjacent via Pete) + LIM client (website work)"
 
   - name: "Portland Raging Grannies"
     clickup_project: "Raging Grannies"
     clickup_option_id: "48dfc203-1c7a-4fbd-8d3b-4ef845159629"
+    note: "Organizational commitment: newsletter creation/distribution, website work, all tech"
 
 personal:
   - name: "Maya Bairey"

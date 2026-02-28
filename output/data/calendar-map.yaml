@@ -15,8 +15,8 @@ calendars:
     invite_context: "Used when contact knows Maya as Steph/Lingua Ink"
     active: true
     naming_conventions:
-      client_formal: "ClientName and Steph @ Lingua Ink"
-      client_informal: "Client:Steph"
+      client_formal: "ClientName and Steph @ Lingua Ink (created by Calendly)"
+      client_informal: "Client:Maya"
       multi_person: "Name:Name:Name"
       clickup_legacy: "checkmark prefix + task name [Project] - task_id (abandoned sync, legacy only)"
       personal_leakage: "[Personal] suffix on some items"
@@ -87,29 +87,30 @@ recurring_events:
 
   - event: Royalty reports
     calendar: linguainkmedia@gmail.com
-    frequency: monthly
-    schedule: "1st of month, 09:00-10:00"
+    frequency: quarterly
+    schedule: "1st of January, April, July, October"
     status: active
 
   - event: Writing Cohort / Entrepreneur Cohort
     calendar: linguainkmedia@gmail.com
-    frequency: weekly
-    schedule: "Sundays, 12:00-14:00"
+    frequency: twice-weekly
+    schedule: "Thursdays and Sundays, 12:00-14:00"
     status: active
     note: "Canonical home is mjbairey; presence here is accidental duplication"
 
   - event: HoD meeting series
     calendar: linguainkmedia@gmail.com
     frequency: weekly
-    schedule: "Thursdays, 13:00-15:00"
+    schedule: "Tuesdays, 13:00-14:00"
     status: active
     note: "HoD = The Hallway of Doorknobs (Lynn Haller's book project)"
 
   - event: Story Lounge
     calendar: linguainkmedia@gmail.com
     frequency: weekly
-    schedule: "Tuesdays, 13:00-14:00"
+    schedule: "Fridays, 09:00-10:00"
     status: active
+    note: "Intel alumni meetup"
 
   - event: Raging Grannies Monthly Meeting / PRG meeting
     calendar: linguainkmedia@gmail.com
@@ -138,9 +139,10 @@ recurring_events:
   - event: "Steph: Sulima"
     calendar: linguainkmedia@gmail.com
     frequency: weekly
+    schedule: "Thursdays, 09:00-10:00"
     status: active
 
-  - event: "Daniela:Steph"
+  - event: "Daniela:Maya"
     calendar: linguainkmedia@gmail.com
     frequency: weekly
     schedule: Thursdays
@@ -149,8 +151,8 @@ recurring_events:
   # --- mjbairey@gmail.com ---
   - event: Writing Cohort
     calendar: mjbairey@gmail.com
-    frequency: weekly
-    schedule: "Sundays, 12:00-14:00"
+    frequency: twice-weekly
+    schedule: "Thursdays and Sundays, 12:00-14:00"
     status: active
     note: "Canonical calendar for this event"
 
@@ -186,8 +188,8 @@ recurring_events:
   # --- stephbairey@gmail.com ---
   - event: Writing Cohort
     calendar: stephbairey@gmail.com
-    frequency: weekly
-    schedule: "Sundays, 12:00-14:00"
+    frequency: twice-weekly
+    schedule: "Thursdays and Sundays, 12:00-14:00"
     status: active
     note: "Accidental duplication; canonical home is mjbairey"
 
